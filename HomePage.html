@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliveFood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header-search">
+                    <div class="header-search__logo">
+                        <a href="/">
+                            <img src="./assets/img/Logo.png" alt="Logo" class="header-search__logo-img">
+                        </a>
+                    </div>
+                    <div class="header-search__btn">
+                        <input type="text" placeholder="Tìm kiếm ..." class="header-search__btn-input">
+                        <i class="fas fa-search header-search__btn-icon"></i>
+                    </div>
+                    <div class="header-search__notify">
+                        <i class="fas fa-bell header-search__notify-icon"></i>
+                        <span class="header-search__notify-notice">0</span>
+
+                        <!-- Notify list -->
+                        <div class="header-search__notify-list">
+                            <!-- Chưa có sản phẩm -->
+                            <img src="./assets/img/no_cart.png" alt="" class="header-search__notify-no-notify-img">
+                            <span class="header-search__notify-no-notify-title">Chưa có thông báo</span>
+
+                            <!-- Đã có sản phẩm -->
+                            <h4 class="header-search__notify-list-heading">Thông báo mới nhất</h4>
+                            <ul class="header-search__notify-list-item">
+                                <li class="header-search__notify-item">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Product_1.jpg" alt="" class="header-search__notify-img">
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="header-search__notify-item header-search__notify-item-viewed">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Product_1.jpg" alt="" class="header-search__notify-img">
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="header-search__notify-item">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Product_1.jpg" alt="" class="header-search__notify-img">
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="header-search__notify-item">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Product_1.jpg" alt="" class="header-search__notify-img">
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="header-search__notify-item header-search__notify-item-viewed">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Product_1.jpg" alt="" class="header-search__notify-img">
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="header-search__notify-item">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Product_1.jpg" alt="" class="header-search__notify-img">
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-link">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="header-search__cart">
+                        <i class="fas fa-shopping-cart header-search__cart-icon"></i>
+                        <span class="header-search__cart-notice">0</span>
+
+                        <!-- Cart list -->
+                        <div class="header-search__cart-list">
+                            <!-- Chưa có sản phẩm -->
+                            <img src="./assets/img/no_cart.png" alt="" class="header-search__cart-no-cart-img">
+                            <span class="header-search__cart-no-cart-title">Chưa có sản phẩm nào</span>
+
+                            <!-- Đã có sản phẩm -->
+                            <h4 class="header-search__cart-list-heading">Sản phẩm đã thêm</h4>
+                            <ul class="header-search__cart-list-item">
+                                <li class="header-search__cart-item">
+                                    <a href="" class="header-search__cart-link">
+                                        <img src="./assets/img/Product_1.jpg" alt="" class="header-search__cart-img">
+                                        <div class="header-search__cart-info">
+                                            <span class="header-search__cart-name">Bông cải xanh</span>
+                                            <span class="header-search__cart-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__cart-footer">
+                                <a href="" class="header__cart-footer-link">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="header-search__user">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar">
+
+            </div>
+        </header>
+
+        <div class="container">
+        </div>
+
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
