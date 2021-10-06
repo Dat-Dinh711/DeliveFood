@@ -338,12 +338,47 @@
 }
 
 
+/* User */
+
+.header-search__user {
+    position: relative;
+    margin-left: 57px;
+}
+
+.header-search__user:hover .header-search__user-list {
+    display: block;
+}
+
+.header-search__user-icon {
+    font-size: 2.6rem;
+}
+
+
 /* Navbar */
 
 .navbar {
     width: 100%;
     height: var(--navbar-height);
     background-color: var(--primary-color);
+}
+
+.navbar-list {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.navbar-item {
+    margin-right: 124px;
+    font-size: 1.8rem;
 }
 
 
@@ -359,6 +394,182 @@
 
 .footer {
     width: 100%;
-    height: 260px;
+    height: var(--footer-height);
     background-color: var(--primary-color);
+}
+
+.footer-content {
+    width: 100%;
+    height: var(--footer-height);
+    display: flex;
+    align-items: center;
+}
+
+
+/* Customer Service */
+
+.footer__customer-service-title {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.footer__customer-service-desc {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.footer__customer-service-link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.footer__customer-service-item {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer__customer-service-item:first-child a {
+    color: red;
+}
+
+.footer__customer-service-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* About DeliveFood */
+
+.footer__about-title {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.footer__about-desc {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.footer__about-link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.footer__about-item {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer__about-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Partner */
+
+.footer__partner-pay {
+    margin-top: 33px;
+}
+
+.footer__partner-title {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.footer__partner-desc {
+    padding: 0;
+    display: flex;
+}
+
+.footer__partner-item {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.footer__partner-item:nth-child(2) .footer__partner-img {
+    width: 80px;
+    height: 40px;
+}
+
+.footer__partner-item:nth-child(3) .footer__partner-img {
+    border-radius: 10px;
+}
+
+.footer__partner-img {
+    width: 40px;
+}
+
+
+/* Pay */
+
+.footer__pay {
+    margin-top: 40px;
+}
+
+.footer__pay-title {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.footer__pay-desc {
+    padding: 0;
+    display: flex;
+}
+
+.footer__pay-item {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.footer__pay-item:first-child .footer__pay-img {
+    margin-top: 15px;
+}
+
+.footer__pay-item:nth-child(2) .footer__pay-img {
+    margin-top: 10px;
+}
+
+.footer__pay-img {
+    width: 40px;
+}
+
+
+/* Footer Connect */
+
+.footer__connect {}
+
+.footer__connect-title {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.footer__connect-desc {
+    margin-top: 38px;
+    display: flex;
+}
+
+.footer__connect-qr {
+    width: 125px;
+}
+
+.footer__connect-apps {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__connect-apps-img {
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.footer__connect-apps-img:last-child {
+    margin-bottom: 0;
 }
