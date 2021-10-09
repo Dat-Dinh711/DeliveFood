@@ -386,7 +386,468 @@
 
 .container {
     width: 100%;
-    height: 350px;
+    background-color: #fafafa;
+}
+
+.container__banner-img {
+    width: 100%;
+    height: var(--banner-height);
+}
+
+.container-content {
+    padding: 75px 0;
+}
+
+
+/* Container Featured */
+
+.container__products-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.container__featured-products {
+    margin-top: 20px;
+}
+
+.container__products-item {
+    position: relative;
+    width: 100%;
+    height: var(--product-height);
+    border: 1px solid var(--product-border);
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__products-item:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.container__products-img {
+    width: 195px;
+    height: 190px;
+}
+
+.container__products-rating {
+    padding-right: 120px;
+    margin: 15px 0;
+    color: #d5d5d5;
+}
+
+.container__products-star--gold {
+    color: #F88B56;
+    margin-right: 2px;
+}
+
+.container__products-name {
+    padding-right: 82px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: var(--product-name-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container__products-name:hover {
+    color: var(--primary-color);
+}
+
+.container__products-price {
+    padding-right: 115px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.container__products-new {
+    position: absolute;
+    top: 28px;
+    right: 32px;
+    width: 35px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: #F88B56;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__products-new span {
+    color: var(--white-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.container__products-sale {
+    position: absolute;
+    top: 28px;
+    left: 32px;
+    width: 54px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: #5BC0DE;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.container__products-sale span {
+    color: var(--white-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.container__products-onsale .container__products-sale {
+    display: flex;
+}
+
+.container__products-cart {
+    position: absolute;
+    top: 190px;
+    right: 22px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FEC0C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__products-cart i {
+    font-size: 1.4rem;
+}
+
+.container__featured-banner {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    border: 1px solid var(--product-border);
+    background-color: var(--white-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.container__featured-banner-img:first-child {
+    margin-right: 20px;
+}
+
+
+/* Container Vegetables */
+
+.container__vegetables {
+    margin-top: 75px;
+}
+
+.container__vegetables-products {
+    display: flex;
+    margin-top: 20px;
+}
+
+.container__vegetables-products-item:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.container__vegetables-banner img {
+    width: 100%;
+    height: calc(2*var(--product-height));
+}
+
+.container__vegetables-products-item {
+    position: relative;
+    width: 100%;
+    height: calc(2*var(--product-height));
+    border: 1px solid var(--product-border);
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 5px; */
+}
+
+.container__vegetables-products-img {
+    width: 390px;
+    height: 380px;
+}
+
+.container__vegetables-products-rating {
+    padding-right: 295px;
+    margin: 30px 0;
+    color: #d5d5d5;
+}
+
+.container__vegetables-products-rating i {
+    font-size: 1.4rem;
+}
+
+.container__vegetables-products-name {
+    padding-right: 220px;
+    margin-bottom: 30px;
+    font-size: 2.7rem;
+    color: var(--product-name-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container__vegetables-products-name:hover {
+    color: var(--primary-color);
+}
+
+.container__vegetables-products-desc {
+    width: 390px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.container__vegetables-products-price {
+    padding-right: 275px;
+    font-size: 2.1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.container__vegetables-products-new {
+    position: absolute;
+    top: 45px;
+    right: 55px;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #F88B56;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__vegetables-products-new span {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.container__vegetables-products-sale {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    width: 70px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #5BC0DE;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.container__vegetables-products-sale span {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.container__vegetables-products-onsale .container__vegetables-products-sale {
+    display: flex;
+}
+
+.container__vegetables-products-cart {
+    position: absolute;
+    top: 385px;
+    right: 45px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FEC0C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__vegetables-products-cart i {
+    font-size: 1.8rem;
+}
+
+
+/* Container Meat */
+
+.container__meat {
+    margin-top: 75px;
+}
+
+.container__meat-products {
+    margin-top: 20px;
+}
+
+.container__meat-banner {
+    width: 100%;
+}
+
+.container__meat-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.container__meat-products {
+    display: flex;
+}
+
+.container__meat-best-seller {
+    width: var(--product-width);
+    max-height: 866px;
+    border: 1px solid var(--product-border);
+    background-color: var(--white-color);
+}
+
+.container__meat-best-seller-content {
+    margin: 60px 20px;
+}
+
+.container__meat-best-seller-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.container__meat-best-seller-item {
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--product-border);
+}
+
+.container__meat-best-seller-item:first-child {
+    padding-top: 0;
+}
+
+.container__meat-best-seller-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.container__meat-best-seller-img {
+    width: 78px;
+    height: 78px;
+}
+
+.container__meat-best-seller-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.container__meat-best-seller-name {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.container__meat-best-seller-price {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+
+/* Container Fruit */
+
+.container__fruit {
+    margin-top: 75px;
+}
+
+.container__fruit-products {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+/* Container Recipe */
+
+.container__recipe {
+    margin-top: 75px;
+}
+
+.container__recipe-products {
+    margin-top: 20px;
+    position: relative;
+}
+
+.container__recipe-item {
+    width: 95%;
+    height: 487px;
+    border: 1px solid var(--product-border);
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__recipe-item:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.container__recipe-img {
+    width: 320px;
+    /* width: 280px; */
+    height: 280px;
+}
+
+.container__recipe-title {
+    margin: 25px 0;
+    padding-right: 160px;
+    text-decoration: none;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.container__recipe-desc {
+    width: 330px;
+    font-size: 1.4rem;
+}
+
+.container__recipe-arrow-left {
+    position: absolute;
+    top: 45%;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: #fefefe;
+    border: 1px solid var(--product-border);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__recipe-arrow-left i,
+.container__recipe-arrow-right i {
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.container__recipe-arrow-right {
+    position: absolute;
+    top: 45%;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: #fefefe;
+    border: 1px solid var(--product-border);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -406,7 +867,7 @@
 }
 
 
-/* Customer Service */
+/* Footer Customer Service */
 
 .footer__customer-service-title {
     font-size: 1.4rem;
@@ -439,7 +900,7 @@
 }
 
 
-/* About DeliveFood */
+/* Footer About DeliveFood */
 
 .footer__about-title {
     font-size: 1.4rem;
@@ -468,7 +929,7 @@
 }
 
 
-/* Partner */
+/* Footer Partner */
 
 .footer__partner-pay {
     margin-top: 33px;
@@ -504,7 +965,7 @@
 }
 
 
-/* Pay */
+/* Footer Pay */
 
 .footer__pay {
     margin-top: 40px;
@@ -540,8 +1001,6 @@
 
 
 /* Footer Connect */
-
-.footer__connect {}
 
 .footer__connect-title {
     font-size: 1.4rem;
