@@ -110,3 +110,43 @@ html {
         opacity: 1;
     }
 }
+/*Components*/
+.rate{
+    color: #F88B56;
+    margin-right: 5px;
+}
+
+.primary-button{
+    width: 165px;
+    height: 40px;
+    margin: 15px 0;
+    background: linear-gradient(180deg, rgba(252, 145, 145, 0) 0%, rgba(252, 145, 145, 0.458333) 0.01%, #FC9191 100%);
+    color: #303030;
+    border-radius: 8px;
+    border:none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-control{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #e2e2e2;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #303030;
+    cursor: pointer;
+}
+
+.btn-control-active{
+    background: var(--primary-color);
+}
+
+.btn-control-disable{
+    background: #f2f2f2;
+    color: #ababab;
+    cursor: default;
+}
