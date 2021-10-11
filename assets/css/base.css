@@ -35,56 +35,6 @@ html {
     margin: 0 auto;
 }
 
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    /* margin-left: -5px;
-    margin-right: -5px; */
-}
-
-.grid__row-2 {
-    width: 40%;
-    max-height: 650px;
-    display: flex;
-    flex-wrap: wrap;
-    /* margin-left: -5px;
-    margin-right: -5px; */
-}
-
-.grid__row-2-column {
-    width: 50%;
-    max-height: 325px;
-}
-
-.grid__row-4 {
-    width: 80%;
-    max-height: 650px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* margin-left: -5px;
-    margin-right: -5px; */
-}
-
-.grid__row-4-column {
-    width: 25%;
-}
-
-.grid__column-2 {
-    /* padding-left: 5px;
-    padding-right: 5px; */
-    width: 20%;
-}
-
-
-/* Độ dài bằng 2 lần column-2 */
-
-.grid__2column-2 {
-    /* padding-left: 5px;
-    padding-right: 5px; */
-    width: 40%;
-}
-
 .grid__column-3 {
     padding-left: 5px;
     padding-right: 5px;
@@ -111,11 +61,7 @@ html {
         opacity: 1;
     }
 }
-<<<<<<< HEAD
-
-=======
 /*Components*/
->>>>>>> cd636dd225a13b5a87514b098774d03b6aad1e52
 .rate{
     color: #F88B56;
     margin-right: 5px;
@@ -155,7 +101,6 @@ html {
     color: #ababab;
     cursor: default;
 }
-<<<<<<< HEAD
 
 .grid__row {
     display: flex;
@@ -218,5 +163,3 @@ html {
     display: flex;
     justify-content: center;
 }
-=======
->>>>>>> cd636dd225a13b5a87514b098774d03b6aad1e52
