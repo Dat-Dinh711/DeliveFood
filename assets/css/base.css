@@ -163,3 +163,7 @@ html {
     display: flex;
     justify-content: center;
 }
+
+.grid__2column-4 {
+    width: 66.6666%;
+}
