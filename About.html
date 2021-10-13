@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeliveFood</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header-search">
+                    <div class="header-search__logo">
+                        <a href="/">
+                            <img src="./assets/img/Public Image/Logo.png" alt="Logo" class="header-search__logo-img" />
+                        </a>
+                    </div>
+                    <div class="header-search__btn">
+                        <input type="text" placeholder="Tìm kiếm ..." class="header-search__btn-input" />
+                        <i class="fas fa-search header-search__btn-icon"></i>
+                    </div>
+                    <div class="header-search__notify">
+                        <i class="fas fa-bell header-search__notify-icon"></i>
+                        <span class="header-search__notify-notice">0</span>
+
+                        <!-- Notify list -->
+                        <div class="header-search__notify-list">
+                            <!-- Chưa có sản phẩm -->
+                            <img src="./assets/img/no_cart.png" alt="" class="header-search__notify-no-notify-img" />
+                            <span class="header-search__notify-no-notify-title">Chưa có thông báo</span>
+
+                            <!-- Đã có sản phẩm -->
+                            <h4 class="header-search__notify-list-heading">
+                                Thông báo mới nhất
+                            </h4>
+                            <ul class="header-search__notify-list-item">
+                                <li class="header-search__notify-item">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt=""
+                                            class="header-search__notify-img" />
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100%
+                                                organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="
+                      header-search__notify-item
+                      header-search__notify-item-viewed
+                    ">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt=""
+                                            class="header-search__notify-img" />
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100%
+                                                organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="header-search__notify-item">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt=""
+                                            class="header-search__notify-img" />
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100%
+                                                organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="header-search__notify-item">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt=""
+                                            class="header-search__notify-img" />
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100%
+                                                organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="
+                      header-search__notify-item
+                      header-search__notify-item-viewed
+                    ">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt=""
+                                            class="header-search__notify-img" />
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100%
+                                                organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="header-search__notify-item">
+                                    <a href="" class="header-search__notify-link">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt=""
+                                            class="header-search__notify-img" />
+                                        <div class="header-search__notify-info">
+                                            <span class="header-search__notify-name">Bông cải xanh</span>
+                                            <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100%
+                                                organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-link">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="header-search__cart">
+                        <i class="fas fa-shopping-cart header-search__cart-icon"></i>
+                        <span class="header-search__cart-notice">0</span>
+
+                        <!-- Cart list -->
+                        <div class="header-search__cart-list">
+                            <!-- Chưa có sản phẩm -->
+                            <img src="./assets/img/no_cart.png" alt="" class="header-search__cart-no-cart-img" />
+                            <span class="header-search__cart-no-cart-title">Chưa có sản phẩm nào</span>
+
+                            <!-- Đã có sản phẩm -->
+                            <h4 class="header-search__cart-list-heading">
+                                Sản phẩm đã thêm
+                            </h4>
+                            <ul class="header-search__cart-list-item">
+                                <li class="header-search__cart-item">
+                                    <a href="" class="header-search__cart-link">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt=""
+                                            class="header-search__cart-img" />
+                                        <div class="header-search__cart-info">
+                                            <span class="header-search__cart-name">Bông cải xanh</span>
+                                            <span class="header-search__cart-desc">Sản phẩm an toàn, thân thiên, 100%
+                                                organic</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__cart-footer">
+                                <a href="" class="header__cart-footer-link">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="header-search__user">
+                        <i class="fas fa-user-circle header-search__user-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar">
+                <div class="grid">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="" class="nav-link"> Trang chủ </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="" class="nav-link"> Về chúng tôi </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="" class="nav-link">
+                                Danh sách sản phẩm
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="" class="nav-link"> Công thức </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="container__banner">
+                <img src="./assets/img/About/Banner.png" alt="Banner About Us" class="container__banner-img" />
+                <div class="container__banner-text">
+                    <span class="container__banner-text-big"> DeliveFood </span>
+                    <div class="container__banner-text-sub">
+                        Bạn muốn trở thành Đối tác bán hàng của DeliveFood?
+                        <a href="#">Ấn vào đây</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container__about">
+                <div class="container__about-title">
+                    Mang đến cho bạn thực phẩm tươi sống, thiết yếu đúng giá và nhanh
+                    chóng
+                </div>
+                <div class="container__about-subtitle">
+                    Nhanh chóng trợ giúp nhu cầu mua sắm thực phẩm của bạn với những
+                    loại thực phẩm tươi, các sản phẩm thiết yếu và dịch vụ giao hàng
+                    “thần tốc”. DeliveFood hiện đang được thử nghiệm tại tất cả các quận
+                    ở TPHCM. Chúng tôi sẽ mở rộng thêm nhiều khu vực trong thời gian
+                    tới!
+                </div>
+                <div class="container__about-quote">
+                    “You want, you pick, you order </br>
+                    We sell, we sort, we delivery”
+                </div>
+                <div class="container__about-grid">
+                    <div class="container__about-columns">
+                        <div class="container__about-pic">
+                            <img src="assets/img/About/Pic1.png" />
+                        </div>
+                        <div class="container__about-grid-title">
+                            Giao hàng tận tay chỉ sau vài lần chạm
+                        </div>
+                        <div class="container__about-grid-text">
+                            DeliveFood có đội ngũ giao hàng nhanh thần tốc, mang đến cho bạn nguồn thực phẩm tươi ngon
+                            nhanh nhất có thể, dù bạn đang ở đâu.
+                        </div>
+                    </div>
+                    <div class="container__about-columns">
+                        <div class="container__about-pic">
+                            <img src="assets/img/About/Pic2.png" />
+                        </div>
+                        <div class="container__about-grid-title">
+                            Đa dạng lựa chọn
+                        </div>
+                        <div class="container__about-grid-text">
+                            Danh sách mặt hàng đa dạng phục vụ nhu cầu của bạn trong thời gian giãn cách.
+                        </div>
+                    </div>
+                </div>
+                <div class="container__about-minibanner">
+                    <div class="container__about-2-columns">
+                        <div class="container__about-4-columns">
+                            <img src="assets/img/About/MiniBanner1.png" />
+                        </div>
+                        <div class="container__about-4-columns">
+                            <img src="assets/img/About/MiniBanner2.png" />
+                        </div>
+                    </div>
+                    <div class="container__about-2-columns">
+                        <div class="container__about-4-columns">
+                            <img src="assets/img/About/MiniBanner3.png" />
+                        </div>
+                        <div class="container__about-4-columns">
+                            <img src="assets/img/About/MiniBanner4.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="container__about-action">
+                    <button type="button" onclick="location.href='./HomePage.html';">Khám phá ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid">
+                <div class="footer-content">
+                    <div class="grid__column-3 footer__customer-service">
+                        <span class="footer__customer-service-title">CHĂM SÓC KHÁCH HÀNG</span>
+                        <ul class="footer__customer-service-desc">
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                    Hotline: 1900 1111
+                                </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                    Các câu hỏi thường gặp
+                                </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                    Hướng dẫn đặt hàng
+                                </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                    Chính sách đổi trả
+                                </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                    Hỗ trợ khách hàng
+                                </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                    Báo lỗi mật khẩu: security@delivefood.vn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-3 footer__about">
+                        <span class="footer__about-title">VỀ DELIVEFOOD</span>
+                        <ul class="footer__about-desc">
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                    Chính sách bảo mật thanh toán
+                                </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                    Chính sách bảo mật thông tin cá nhân
+                                </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                    Chính sách giải quyết khiếu nại
+                                </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                    Điều khoản sử dụng
+                                </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                    Bán hàng doanh nghiệp
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-3 footer__partner-pay">
+                        <div class="footer__partner">
+                            <span class="footer__partner-title">ĐỐI TÁC LIÊN KẾT</span>
+                            <ul class="footer__partner-desc">
+                                <li class="footer__partner-item">
+                                    <img src="./assets/img/Public Image/GrabExpress.png" alt=""
+                                        class="footer__partner-img">
+                                </li>
+                                <li class="footer__partner-item">
+                                    <img src="./assets/img/Public Image/AhaMove.png" alt="" class="footer__partner-img">
+                                </li>
+                                <li class="footer__partner-item">
+                                    <img src="./assets/img/Public Image/Be.png" alt="" class="footer__partner-img">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__pay">
+                            <span class="footer__pay-title">PHƯƠNG THỨC THANH TOÁN</span>
+                            <ul class="footer__pay-desc">
+                                <li class="footer__pay-item">
+                                    <img src="./assets/img/Public Image/Visa.png" alt="" class="footer__pay-img">
+                                </li>
+                                <li class="footer__pay-item">
+                                    <img src="./assets/img/Public Image/MasterCard.png" alt="" class="footer__pay-img">
+                                </li>
+                                <li class="footer__pay-item">
+                                    <img src="./assets/img/Public Image/Money.png" alt="" class="footer__pay-img">
+                                </li>
+                                <li class="footer__pay-item">
+                                    <img src="./assets/img/Public Image/OnlineBanking.png" alt=""
+                                        class="footer__pay-img">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid__column-3 footer__connect">
+                        <span class="footer__connect-title">KẾT NỐI VỚI CHÚNG TÔI</span>
+                        <div class="footer__connect-desc">
+                            <img src="./assets/img/Public Image/QR_Code.png" alt="" class="footer__connect-qr">
+                            <div class="footer__connect-apps">
+                                <img src="./assets/img/Public Image/gg play.png" alt=""
+                                    class="footer__connect-apps-img">
+                                <img src="./assets/img/Public Image/app store.png" alt=""
+                                    class="footer__connect-apps-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
