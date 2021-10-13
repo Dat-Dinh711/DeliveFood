@@ -35,6 +35,75 @@ html {
     margin: 0 auto;
 }
 
+.grid__column-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.grid__column-4 {
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Animation */
+
+@keyframes growth {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/*Components*/
+
+.rate {
+    color: #F88B56;
+    margin-right: 5px;
+}
+
+.primary-button {
+    width: 165px;
+    height: 40px;
+    margin: 15px 0;
+    background: linear-gradient(180deg, rgba(252, 145, 145, 0) 0%, rgba(252, 145, 145, 0.458333) 0.01%, #FC9191 100%);
+    color: #303030;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-control {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #e2e2e2;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #303030;
+    cursor: pointer;
+}
+
+.btn-control-active {
+    background: var(--primary-color);
+}
+
+.btn-control-disable {
+    background: #f2f2f2;
+    color: #ababab;
+    cursor: default;
+}
+
 .grid__row {
     display: flex;
     flex-wrap: wrap;
@@ -85,10 +154,10 @@ html {
     width: 40%;
 }
 
-.grid__column-3 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 25%;
+.grid__3column-2 {
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    width: 60%;
 }
 
 .grid__column-4 {
@@ -223,4 +292,8 @@ html {
     color: #949494;
     cursor: default;
     background-color: #c3c3c3;
+}
+
+.grid__2column-4 {
+    width: 66.6666%;
 }
