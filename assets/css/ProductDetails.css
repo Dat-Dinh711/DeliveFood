@@ -42,9 +42,11 @@
     opacity: 0;
 }
 
-.container__product-content h1 {
+.container__product-content .title {
     margin: 0px;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .container__product-content .below-title {
@@ -115,7 +117,7 @@
 
 .fa-check {
     position: relative;
-    left: -8px;
+    left: -10px;
     bottom: 21px;
     font-size: .8rem;
     color: #fefefe;

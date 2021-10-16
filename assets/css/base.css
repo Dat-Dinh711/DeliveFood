@@ -174,16 +174,41 @@ html {
 }
 
 .primary-button {
-    width: 165px;
-    height: 40px;
+    width: auto;
+    height: 50px;
     margin: 15px 0;
-    background: linear-gradient(180deg, rgba(252, 145, 145, 0) 0%, rgba(252, 145, 145, 0.458333) 0.01%, #FC9191 100%);
-    color: #303030;
-    border-radius: 8px;
+    padding: 15px 32px;
+    background: #ff6a6a;
+    color: #fefefe;
+    /*border-radius: 8px;*/
     border: none;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+    text-align: center;
+}
+
+.primary-button:hover{
+    background: #ff6a6af7;
+}
+
+.secondary-button{
+    width: auto;
+    height: 50px;
+    margin: 15px 0;
+    padding: 15px 32px;
+    background: none;
+    color: #ff6a6a;
+    /*border-radius: 8px;*/
+    border: 1px solid #ff6a6a;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+.secondary-button:hover{
+    background: #ff6a6a13;
 }
 
 .btn-control {
