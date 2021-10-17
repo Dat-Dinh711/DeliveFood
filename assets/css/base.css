@@ -40,20 +40,18 @@ html {
     flex-wrap: wrap;
 }
 
-.grid__column-2 {
-    width: 20%;
-}
-
-.grid__column-3 {
+.grid__column-4 {
     padding-left: 5px;
     padding-right: 5px;
     width: 25%;
 }
 
-.grid__column-4 {
-    width: 33.3333%;
-    display: flex;
-    justify-content: center;
+.grid__column-5 {
+    width: 20%;
+}
+
+.grid__column-6 {
+    width: 16.6667%;
 }
 
 .grid__row-2 {
@@ -89,12 +87,6 @@ html {
 
 .grid__3column-2 {
     width: 60%;
-}
-
-.grid__column-4 {
-    width: 33.3333%;
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -188,11 +180,11 @@ html {
     text-align: center;
 }
 
-.primary-button:hover{
+.primary-button:hover {
     background: #ff6a6af7;
 }
 
-.secondary-button{
+.secondary-button {
     width: auto;
     height: 50px;
     margin: 15px 0;
@@ -207,7 +199,7 @@ html {
     text-align: center;
 }
 
-.secondary-button:hover{
+.secondary-button:hover {
     background: #ff6a6a13;
 }
 
@@ -1209,6 +1201,10 @@ html {
 
 
 /* Footer Partner */
+
+.footer__partner {
+    margin-top: -20px;
+}
 
 .footer__partner-pay {
     margin-top: 33px;
