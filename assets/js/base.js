@@ -11,6 +11,7 @@ function showRegisterForm() {
     modal.classList.add('open');
     registerForm.classList.add('open');
     loginForm.classList.remove('open');
+    // editProductForm.classList.remove('open');
 }
 
 function showLoginForm() {
@@ -23,6 +24,7 @@ function hideForm() {
     modal.classList.remove('open');
     registerForm.classList.remove('open');
     loginForm.classList.remove('open');
+    // editProductForm.classList.remove('open');
 }
 
 for (const registerBtn of registerBtns) {
@@ -31,7 +33,6 @@ for (const registerBtn of registerBtns) {
 
 for (const loginBtn of loginBtns) {
     loginBtn.addEventListener('click', showLoginForm);
-    // loginBtn.addEventListener('click', alert('hello'));
 }
 
 for (const backBtn of backBtns) {
@@ -71,13 +72,11 @@ function statusChangeCallback(response) { // Called with the results from FB.get
     }
 }
 
-
 function checkLoginState() { // Called when a person is finished with the Login Button.
     FB.getLoginStatus(function(response) { // See the onlogin handler
         statusChangeCallback(response);
     });
 }
-
 
 window.fbAsyncInit = function() {
     FB.init({
