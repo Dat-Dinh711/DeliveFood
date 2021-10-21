@@ -53,6 +53,12 @@
     display: flex;
 }
 
+.button__addtocart,
+.button__buynow {
+    width: 200px;
+    margin-top: 20px;
+}
+
 .container__product-content .button__addtocart {
     display: block;
 }

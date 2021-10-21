@@ -99,13 +99,5 @@
 }
 
 .cart__checkout button {
-    background-color: #8abf44;
-    padding: 13px 36px;
-    text-transform: capitalize;
-    border-radius: 2px;
-    font-size: 14px;
-    cursor: pointer;
-    display: inline-block;
-    border: none;
-    color: white;
+    width: 120px;
 }
