@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliveFood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/Seller Mode/DeliveryManager.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="../assets/img/Public Image/Logo.png" type="image/x-icon">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=359469145803979&autoLogAppEvents=1" nonce="OW3DDN5L"></script>
+    <meta name="google-signin-client_id" content="692753406462-udjs52qov2mop6fr1hb6b366tnqdivat.apps.googleusercontent.com">
+</head>
+
+<body>
+    <div class="app">
+        <div class="grid__row">
+            <div class="grid__column-6">
+                <div class="navbar__seller">
+                    <div class="navbar__seller-content">
+                        <a href="">
+                            <img src="../assets/img/Public Image/Logo.png" alt="" class="navbar__seller-img">
+                        </a>
+
+                        <div class="navbar__seller-shop-info">
+                            <img src="../assets/img/Public Image/avtshop.png" alt="" class="navbar__seller-shop-info-img">
+                            <span class="navbar__seller-shop-info-name">Tên cửa hàng</span>
+                        </div>
+
+                        <div class="navbar__seller-category">
+                            <ul class="navbar__seller-category-list">
+                                <li class="navbar__seller-category-item">
+                                    <i class="fas fa-chart-pie navbar__seller-category-item-icon"></i>
+                                    <span class="navbar__seller-category-item-title">Tổng quan</span>
+                                </li>
+                                <li class="navbar__seller-category-item navbar__seller-category-products">
+                                    <div class="js-category-products" style="height: 30px;">
+                                        <i class="fas fa-list navbar__seller-category-item-icon"></i>
+                                        <span class="navbar__seller-category-item-title">Danh sách sản phẩm</span>
+                                    </div>
+                                    <ul class="navbar__seller-category-products-list">
+                                        <li class="navbar__seller-category-products-item">Rau Củ</li>
+                                        <li class="navbar__seller-category-products-item">Thịt</li>
+                                        <li class="navbar__seller-category-products-item">Trái Cây</li>
+                                        <li class="navbar__seller-category-products-item">Mẹ & Bé</li>
+                                        <li class="navbar__seller-category-products-item js-product-manage">
+                                            <i class="fas fa-cog"></i> Quản lý danh mục
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navbar__seller-category-item">
+                                    <i class="fas fa-clipboard-list navbar__seller-category-item-icon"></i>
+                                    <span class="navbar__seller-category-item-title">Đơn hàng</span>
+                                </li>
+                                <li class="navbar__seller-category-item">
+                                    <i class="fas fa-truck navbar__seller-category-item-icon"></i>
+                                    <span class="navbar__seller-category-item-title">Quản lý giao hàng</span>
+                                </li>
+                                <li class="navbar__seller-category-item">
+                                    <i class="fas fa-store-alt navbar__seller-category-item-icon"></i>
+                                    <span class="navbar__seller-category-item-title">Xem shop</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="navbar__seller-out">
+                        <i class="fas fa-sign-out-alt navbar__seller-out-icon"></i>
+                        <span class="navbar__seller-out-title">Thoát</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__5column-6">
+                <div class="header__seller-title">Quản lý giao hàng</div>
+
+                <!-- Mn code ở đây nha -->
+                <div class="delivery">
+                    <div class="header-search__btn order__search">
+                        <input type="text" placeholder="Tìm kiếm đơn hàng ..." class="header-search__btn-input">
+                        <i class="fas fa-search header-search__btn-icon"></i>
+                    </div>
+
+                    <div class="delivery__product">
+                        <div class="delivery__product-title"> 
+                            <div>Mã đơn hàng</div>
+                            <div>Tên khách hàng</div>
+                            <div>Tên tài xế</div>
+                            <div>Giá trị đơn hàng</div>
+                            <div>Trạng thái</div>
+                            <div>Thao tác</div>
+                        </div>
+
+                        <div class="delivery__list">
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Đang giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Hoàn thành</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Không giao được</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                            <ul class="delivery__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>Nguyễn Văn A</li>
+                                <li>808.000</li>
+                                <li>Chưa giao</li>
+                                <li>
+                                    <div>Chi tiết</div>
+                                    <div>Duyệt</div>
+                                    <div>Hủy</div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body js-modal__body">
+
+            <!-- Product Catalog Management form -->
+            <div class="manage-form auth-form js-manage-product-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Quản lý danh mục</h3>
+                        <span class="auth-form__switch-btn js-add-product">Thêm danh mục</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <span class="manage-form__notice">Bạn có thể thêm tối đa 20 danh mục</span>
+                        <ul class="manage-form__list">
+                            <li class="manage-form__item">
+                                Rau Củ
+                                <div class="manage-form__icon-list">
+                                    <i class="fas fa-edit manage-form__icon-edit js-edit-product-btn"></i>
+                                    <i class="fas fa-trash-alt manage-form__icon-delete"></i>
+                                </div>
+                            </li>
+                            <li class="manage-form__item">
+                                Thịt đóng hộp
+                                <div class="manage-form__icon-list">
+                                    <i class="fas fa-edit manage-form__icon-edit js-edit-product-btn"></i>
+                                    <i class="fas fa-trash-alt manage-form__icon-delete"></i>
+                                </div>
+                            </li>
+                            <li class="manage-form__item">
+                                Rau Củ
+                                <div class="manage-form__icon-list">
+                                    <i class="fas fa-edit manage-form__icon-edit js-edit-product-btn"></i>
+                                    <i class="fas fa-trash-alt manage-form__icon-delete"></i>
+                                </div>
+                            </li>
+                            <li class="manage-form__item">
+                                Rau Củ
+                                <div class="manage-form__icon-list">
+                                    <i class="fas fa-edit manage-form__icon-edit js-edit-product-btn"></i>
+                                    <i class="fas fa-trash-alt manage-form__icon-delete"></i>
+                                </div>
+                            </li>
+                            <li class="manage-form__item">
+                                Rau Củ
+                                <div class="manage-form__icon-list">
+                                    <i class="fas fa-edit manage-form__icon-edit js-edit-product-btn"></i>
+                                    <i class="fas fa-trash-alt manage-form__icon-delete"></i>
+                                </div>
+                            </li>
+                            <li class="manage-form__item">
+                                Rau Củ
+                                <div class="manage-form__icon-list">
+                                    <i class="fas fa-edit manage-form__icon-edit"></i>
+                                    <i class="fas fa-trash-alt manage-form__icon-delete"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="manage-form__control auth-form__control">
+                        <button class="modal-btn secondary-button auth-form__control-back js-back-btn">Thoát</button>
+                        <button class="modal-btn primary-button">Xong</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Catalog form -->
+            <div class="auth-form js-add-product-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Thêm danh mục</h3>
+                        <span class="auth-form__switch-btn js-product-manage">Quản lý danh mục</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập tên danh mục bạn muốn thêm">
+                        </div>
+                    </div>
+
+                    <div class="manage-form__control auth-form__control">
+                        <button class="modal-btn secondary-button auth-form__control-back js-back-btn">Thoát</button>
+                        <button class="modal-btn primary-button">Xong</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit Catalog form -->
+            <div class="auth-form js-edit-product-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Chỉnh sửa danh mục</h3>
+                        <span class="auth-form__switch-btn js-product-manage">Quản lý danh mục</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập tên danh mục bạn muốn thêm">
+                        </div>
+                    </div>
+
+                    <div class="manage-form__control auth-form__control">
+                        <button class="modal-btn secondary-button auth-form__control-back js-back-btn">Thoát</button>
+                        <button class="modal-btn primary-button">Xong</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/Seller Mode/baseSeller.js"></script>
+</body>
+
+</html>
