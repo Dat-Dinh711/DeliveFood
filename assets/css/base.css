@@ -280,19 +280,27 @@ html {
 /* Header */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: var(--header-height);
-    position: relative;
+    background-color: var(--white-color);
+    z-index: 2;
 }
 
 
 /* Header Search */
+
+body {
+    background-color: #fafafa;
+}
 
 .header-search {
     height: var(--search-height);
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #8ABF44; */
 }
 
 .header-search__logo {
@@ -448,7 +456,6 @@ html {
     margin-bottom: 10px;
     color: var(--black-color);
     font-weight: 400;
-    /* height: 1.6rem; */
     width: 300px;
     overflow: hidden;
     white-space: nowrap;
@@ -765,7 +772,6 @@ html {
     background-color: var(--white-color);
     position: absolute;
     top: 47px;
-    /* left: 550px; */
     left: 37%;
     width: 700px;
     padding: 0;
@@ -809,6 +815,15 @@ html {
 
 
 /* Product Item */
+
+.container {
+    padding-top: calc(var(--header-height));
+    background-color: #fafafa;
+}
+
+.container-content {
+    margin: 40px 0;
+}
 
 .container__products-item {
     position: relative;

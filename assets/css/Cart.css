@@ -6,11 +6,6 @@
     width: 100%;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .cart__card {
     display: flex;
     align-items: center;

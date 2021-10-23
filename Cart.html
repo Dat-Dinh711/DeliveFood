@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeliveFood</title>
+    <title>Giỏ hàng - DeliveFood</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/Cart.css">
@@ -277,59 +277,61 @@
             </div>
         </header>
 
-        <div class="container-fluid">
-            <div class="container">
-                <div class="cart__header cart__card">
-                    <div class="checkbox">
-                        <input type="checkbox" name="checkall" />
-                    </div>
-                    <div class="sanpham">
-                        Sản phẩm
-                    </div>
-                    <div class="dongia">
-                        Đơn giá
-                    </div>
-                    <div class="soluong">
-                        Số lượng
-                    </div>
-                    <div class="sotien">
-                        Số tiền
-                    </div>
-                    <div class="thaotac">
-                        Thao tác
-                    </div>
-                </div>
-                <div class="cart__card cart__items">
-                    <div class="checkbox">
-                        <input type="checkbox" />
-                    </div>
-                    <div class="sanpham">
-                        <div class="sanPhamCoHinh">
-                            <img src="assets/img/Products/Bông cải xanh.jpg" />
-                            <span class="textSP">Bông cải xanh</span>
+        <div class="container">
+            <div class="grid">
+                <div class="container-content">
+                    <div class="cart__header cart__card">
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkall" />
+                        </div>
+                        <div class="sanpham">
+                            Sản phẩm
+                        </div>
+                        <div class="dongia">
+                            Đơn giá
+                        </div>
+                        <div class="soluong">
+                            Số lượng
+                        </div>
+                        <div class="sotien">
+                            Số tiền
+                        </div>
+                        <div class="thaotac">
+                            Thao tác
                         </div>
                     </div>
-                    <div class="dongia">
-                        <span>₫25.000</span>
+                    <div class="cart__card cart__items">
+                        <div class="checkbox">
+                            <input type="checkbox" />
+                        </div>
+                        <div class="sanpham">
+                            <div class="sanPhamCoHinh">
+                                <img src="assets/img/Products/Bông cải xanh.jpg" />
+                                <span class="textSP">Bông cải xanh</span>
+                            </div>
+                        </div>
+                        <div class="dongia">
+                            <span>₫25.000</span>
+                        </div>
+                        <div class="soluong">
+                            <input type="number" value="1" min="1" step="1">
+                        </div>
+                        <div class="sotien">
+                            <span>₫25.000</span>
+                        </div>
+                        <div class="thaotac">
+                            <button>Xóa</button>
+                        </div>
                     </div>
-                    <div class="soluong">
-                        <input type="number" value="1" min="1" step="1">
-                    </div>
-                    <div class="sotien">
-                        <span>₫25.000</span>
-                    </div>
-                    <div class="thaotac">
-                        <button>Xóa</button>
-                    </div>
-                </div>
 
-                <div class="cart__card cart__checkout">
-                    <div class="thanhTien">
-                        <span class="text1">Tổng thanh toán (1 sản phẩm):</span>
-                        <span class="text2">₫25.000</span>
-                    </div>
-                    <div class="thanhToan">
-                        <button class="primary-button">Mua hàng</button>
+                    <div class="cart__card cart__checkout">
+                        <div class="thanhTien">
+                            <span class="text1">Tổng thanh toán (1 sản phẩm):</span>
+                            <span class="text2">₫25.000</span>
+                        </div>
+                        <div class="thanhToan">
+                            <button class="primary-button">Mua hàng</button>
+                        </div>
                     </div>
                 </div>
             </div>
