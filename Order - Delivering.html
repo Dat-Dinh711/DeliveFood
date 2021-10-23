@@ -578,103 +578,107 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal js-modal ">
-        <div class="modal__overlay "></div>
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>
 
-        <div class="modal__body js-modal__body ">
+        <div class="modal__body js-modal__body">
 
             <!-- Register form -->
-            <div class="auth-form js-regis-auth-form ">
-                <div class="auth-form__container ">
-                    <div class="auth-form__header ">
-                        <h3 class="auth-form__heading ">Đăng ký</h3>
-                        <span class="auth-form__switch-btn js-login ">Đăng nhập</span>
+            <div class="auth-form js-regis-auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn js-login">Đăng nhập</span>
                     </div>
 
-                    <div class="auth-form__form ">
-                        <div class="auth-form__group ">
-                            <input type="text " class="auth-form__input " placeholder="Tên đăng nhập ">
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Tên đăng nhập">
                         </div>
-                        <div class="auth-form__group ">
-                            <input type="text " class="auth-form__input " placeholder="SĐT hoặc Email của bạn ">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="SĐT hoặc Email của bạn">
                         </div>
-                        <div class="auth-form__group ">
-                            <label for="type-account " class="auth-form__input-title ">Loại Tài khoản:</label>
-                            <select name="type-account " class="auth-form__input-select ">
-                                <option value="buyer ">Người Mua</option>
-                                <option value="seller ">Người Bán</option>
-                                <option value="shipper ">Tài Xế</option>
+                        <div class="auth-form__group">
+                            <label for="type-account" class="auth-form__input-title">Loại Tài khoản:</label>
+                            <select name="type-account" class="auth-form__input-select">
+                                <option value="buyer">Người Mua</option>
+                                <option value="seller">Người Bán</option>
+                                <option value="shipper">Tài Xế</option>
                             </select>
                         </div>
-                        <div class="auth-form__group ">
-                            <input type="password " class="auth-form__input " placeholder="Mật khẩu của bạn ">
+                        <div class="edit-table"></div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <i class="far fa-eye edit-table" id="togglePassword"></i>
                         </div>
-                        <div class="auth-form__group ">
-                            <input type="password " class="auth-form__input " placeholder="Nhập lại mật khẩu ">
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            <i class="far fa-eye edit-table" id="togglePassword"></i>
                         </div>
                     </div>
 
-                    <div class="auth-form__aside ">
-                        <p class="auth-form__policy-text ">
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
                             Bằng việc đăng ký, bạn đã đồng ý với DeliveFood về
-                            <a href=" " class="auth-form__text-link ">Điều khoản dịch vụ</a> &
-                            <a href=" " class="auth-form__text-link ">Chính sách bảo mật</a>
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
                         </p>
                     </div>
 
-                    <div class="auth-form__control ">
-                        <button class="secondary-button auth-form__control-back js-back-btn " style="width: 120px; height: 35px; ">TRỞ LẠI</button>
-                        <button class="primary-button " style="width: 120px; height: 35px; ">ĐĂNG KÝ</button>
+                    <div class="auth-form__control">
+                        <button class="secondary-button auth-form__control-back js-back-btn" style="width: 120px; height: 35px;">TRỞ LẠI</button>
+                        <button class="primary-button" style="width: 120px; height: 35px;">ĐĂNG KÝ</button>
                     </div>
                 </div>
 
-                <div class="auth-form__socials ">
-                    <div class="fb-login-button " data-width="200px " data-size="medium " data-button-type="continue_with " data-layout="default " data-auto-logout-link="false " data-use-continue-as="false "></div>
+                <div class="auth-form__socials">
+                    <div class="fb-login-button" data-width="200px" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 
-                    <a style="width: 200px; height: 28px; background-color: #f5f5f5; " href=" " class="auth-form__socials--google btn btn--size-s btn--with-icon g-signin2 " data-onsuccess="onSignIn ">
-                        <i class="auth-form__socials-icon footer-item-icon fab fa-google "></i>
-                        <span class="auth-form__socials-label ">Kết nối với Google</span>
+                    <a style="width: 200px; height: 28px; background-color: #f5f5f5;" href="" class="auth-form__socials--google btn btn--size-s btn--with-icon g-signin2" data-onsuccess="onSignIn">
+                        <i class="auth-form__socials-icon footer-item-icon fab fa-google"></i>
+                        <span class="auth-form__socials-label">Kết nối với Google</span>
                     </a>
                 </div>
             </div>
 
             <!-- Login form -->
-            <div class="auth-form js-login-auth-form ">
-                <div class="auth-form__container ">
-                    <div class="auth-form__header ">
-                        <h3 class="auth-form__heading ">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn js-register ">Đăng ký</span>
+            <div class="auth-form js-login-auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn js-register">Đăng ký</span>
                     </div>
 
-                    <div class="auth-form__form ">
-                        <div class="auth-form__group ">
-                            <input type="text " class="auth-form__input " placeholder="SĐT hoặc Email của bạn ">
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="SĐT hoặc Email của bạn">
                         </div>
-                        <div class="auth-form__group ">
-                            <input type="password " class="auth-form__input " placeholder="Mật khẩu của bạn ">
-                        </div>
-                    </div>
-
-                    <div class="auth-form__aside ">
-                        <div class="auth-form__help ">
-                            <a href=" " class="auth-form__help-link auth-form__help-forgot ">Quên mật khẩu</a>
-                            <span class="auth-form__help-separate "></span>
-                            <a href=" " class="auth-form__help-link ">Cần trợ giúp?</a>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <i class="far fa-eye edit-table" id="togglePassword"></i>
                         </div>
                     </div>
 
-                    <div class="auth-form__control ">
-                        <button class="secondary-button auth-form__control-back js-back-btn " style="width: 120px; height: 35px; ">TRỞ LẠI</button>
-                        <button class="primary-button " style="width: 120px; height: 35px; ">ĐĂNG KÝ</button>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="secondary-button auth-form__control-back js-back-btn" style="width: 120px; height: 35px;">TRỞ LẠI</button>
+                        <button class="primary-button" style="width: 120px; height: 35px;">ĐĂNG KÝ</button>
                     </div>
                 </div>
 
-                <div class="auth-form__socials ">
-                    <div class="fb-login-button " data-width="200px " data-size="medium " data-button-type="continue_with " data-layout="default " data-auto-logout-link="false " data-use-continue-as="false "></div>
+                <div class="auth-form__socials">
+                    <div class="fb-login-button" data-width="200px" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 
-                    <a style="width: 200px; height: 28px; background-color: #f5f5f5; " href=" " class="auth-form__socials--google btn btn--size-s btn--with-icon g-signin2 " data-onsuccess="onSignIn ">
-                        <i class="auth-form__socials-icon fab fa-google "></i>
-                        <span class="auth-form__socials-label ">Kết nối với Google</span>
+                    <a style="width: 200px; height: 28px; background-color: #f5f5f5;" href="" class="auth-form__socials--google btn btn--size-s btn--with-icon g-signin2" data-onsuccess="onSignIn">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-label">Kết nối với Google</span>
                     </a>
                 </div>
             </div>
