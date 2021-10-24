@@ -38,6 +38,17 @@
     margin-bottom: 5px;
 }
 
+.order-detail__info-contract-shipping-fee {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.order-detail__info-contract-shipping-fee span:nth-child(2) {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
 .order-detail__product {
     height: 360px;
     margin: 20px 0;
@@ -112,8 +123,8 @@
     padding: 12px 0 12px 59%;
 }
 
-.order-detail__product-price span:first-child {
-    margin-right: 30%;
+.order-detail__product-price span:nth-child(1) {
+    margin-right: 28.9%;
 }
 
 .order-detail__control {
