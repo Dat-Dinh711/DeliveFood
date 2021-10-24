@@ -1079,7 +1079,7 @@ body {
     position: relative;
 }
 
-#togglePassword {
+.auth-form__group #togglePassword {
     font-size: 1.6rem;
     position: absolute;
     top: 30px;
