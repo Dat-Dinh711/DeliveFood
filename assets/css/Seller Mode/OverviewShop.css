@@ -38,14 +38,23 @@
     margin-bottom: 5px;
 }
 
-.overview__info-contract-soluong{
+.overview__info-contract-soluong {
     display: grid;
     grid-template-columns: max-content max-content;
     justify-content: space-between;
     margin-right: 30px;
 }
 
-.overview__info-contract-tenspbanchay{
+.overview__info-contract-soluong label,
+.overview__info-contract-soluong span {
+    font-size: 1.4rem;
+}
+
+.overview__info-contract-tenspbanchay {
     display: flex;
     flex-direction: column;
+}
+
+.overview__info-contract-tenspbanchay span {
+    font-size: 1.4rem;
 }
