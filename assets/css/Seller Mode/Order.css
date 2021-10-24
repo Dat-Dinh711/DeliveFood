@@ -31,16 +31,11 @@
 }
 
 .order__product-title div {
-    width: 15%;
+    width: 20%;
 }
 
 .order__product-title div:nth-child(2) {
-    width: 32%;
-}
-
-.order__product-title div:nth-last-child(1) {
-    padding-left: 8%;
-    width: 23%;
+    width: 40%;
 }
 
 .order__list {
@@ -62,16 +57,9 @@
 }
 
 .order__item li {
-    width: 15%;
+    width: 20%;
 }
 
 .order__item li:nth-child(2) {
-    width: 32%;
+    width: 40%;
 }
-
-.order__item li:nth-last-child(1) {
-    width: 19%;
-    display: flex;
-    justify-content: space-between;
-}
-
