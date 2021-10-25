@@ -1445,6 +1445,9 @@ body {
     padding-left: 23px;
     list-style: none;
     font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .navbar__seller-category-item {

@@ -10,19 +10,16 @@ for (var categoryProductsListItem of categoryProductsListItems) {
 }
 
 var categoryProductsHeight = categoryProducts.clientHeight;
-var height = categoryProductsHeight + count * 26 + 5;
+var height = categoryProductsHeight + count * 29 + 5;
 
 const navbarSeller = document.querySelector('.navbar__seller');
 const navbarSellerContent = document.querySelector('.navbar__seller-content');
 var navbarSellerContentHeight = navbarSellerContent.clientHeight;
 var navbarSellerHeight = navbarSeller.clientHeight;
+var listProductsHeight = count * 29 + 5;
 var remainHeight = navbarSellerHeight - navbarSellerContentHeight;
-var listProductsHeight = count * 26 + 5;
-
 
 categoryProductsJS.addEventListener('click', function() {
-
-
     if (categoryProducts.clientHeight == categoryProductsHeight) {
         if (listProductsHeight <= remainHeight) {
             navbarSeller.style = 'height: ' + navbarSellerHeight + 'px';
@@ -36,6 +33,7 @@ categoryProductsJS.addEventListener('click', function() {
         categoryProductsList.style = 'display: none';
         navbarSeller.style = 'height: ' + navbarSellerHeight + 'px';
     }
+    console.log(navbarSellerHeight, listProductsHeight, remainHeight);
 });
 
 
