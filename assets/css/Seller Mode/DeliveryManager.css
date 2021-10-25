@@ -30,17 +30,12 @@
 }
 
 .delivery__product-title div {
-    width: 13%;
+    width: 17%;
 }
 
 .delivery__product-title div:nth-child(2),
 .delivery__product-title div:nth-child(3) {
-    width: 21%;
-}
-
-.delivery__product-title div:nth-last-child(1) {
-    padding-left: 7%;
-    width: 18%;
+    width: 24%;
 }
 
 .delivery__list {
@@ -62,17 +57,12 @@
 }
 
 .delivery__item li {
-    width: 13%;
+    width: 17%;
 }
 
 .delivery__item li:nth-child(2),
 .delivery__item li:nth-child(3) {
-    width: 21%;
+    width: 24%;
 }
 
-.delivery__item li:nth-last-child(1) {
-    width: 17%;
-    display: flex;
-    justify-content: space-between;
-}
 
