@@ -1,5 +1,5 @@
 .navbar__seller {
-    height: 825px;
+    height: 828px;
 }
 
 .header__seller-title {
@@ -14,7 +14,7 @@
 }
 
 .order-detail__info {
-    height: 25%;
+    height: 27%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,9 +41,13 @@
     line-height: 1.8rem;
 }
 
-.order-detail__info-contract span,
 .order-detail__info-contract div {
     margin-bottom: 5px;
+}
+
+.order-detail__info-contract div:first-child {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 
 .order-detail__info-contract-shipping-fee {
@@ -59,7 +63,6 @@
 
 .order-detail__product {
     height: 430px;
-    /* height: 60%; */
     margin: 20px 0;
     border: 1px solid #c4c4c4;
     border-radius: 10px;
@@ -157,7 +160,7 @@
     width: 100%;
     height: 10%;
     padding-left: 77%;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .order-detail__control-btn {
