@@ -26,6 +26,7 @@ categoryProductsJS.addEventListener('click', function() {
         } else {
             navbarSeller.style = 'height: calc(' + navbarSellerHeight + 'px + ' + listProductsHeight + 'px - ' + remainHeight + 'px)';
         }
+
         categoryProductsList.style = 'display: block';
         categoryProducts.style = 'height: ' + height + 'px';
     } else {
@@ -33,11 +34,7 @@ categoryProductsJS.addEventListener('click', function() {
         categoryProductsList.style = 'display: none';
         navbarSeller.style = 'height: ' + navbarSellerHeight + 'px';
     }
-    console.log(navbarSellerHeight, listProductsHeight, remainHeight);
 });
-
-
-
 
 // Product Catalog Management: tắt/mở
 const modal = document.querySelector('.js-modal');
