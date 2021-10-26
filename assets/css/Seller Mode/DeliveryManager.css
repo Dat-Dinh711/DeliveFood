@@ -1,6 +1,6 @@
-
 .header-search__btn.order__search {
     margin: 20px 0 0 20px;
+    background-color: #fafafa;
 }
 
 .product-list__add-btn {
@@ -9,10 +9,8 @@
 }
 
 
-
-
-
 /* list */
+
 .delivery__product {
     border: 1px solid var(--product-border);
     border-radius: 10px;
@@ -65,4 +63,6 @@
     width: 24%;
 }
 
-
+.header-search__btn-input {
+    background-color: #fafafa;
+}
