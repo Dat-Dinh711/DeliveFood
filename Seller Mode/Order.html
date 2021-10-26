@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeliveFood</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="../../assets/css/base.css" />
-    <link rel="stylesheet" href="../../assets/css/Seller Mode/ShopAccountDetail/ShopAccountDetail.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="shortcut icon" href="../../assets/img/Public Image/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/Seller Mode/Order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="../assets/img/Public Image/Logo.png" type="image/x-icon">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=359469145803979&autoLogAppEvents=1" nonce="OW3DDN5L"></script>
-    <meta name="google-signin-client_id" content="692753406462-udjs52qov2mop6fr1hb6b366tnqdivat.apps.googleusercontent.com" />
+    <meta name="google-signin-client_id" content="692753406462-udjs52qov2mop6fr1hb6b366tnqdivat.apps.googleusercontent.com">
 </head>
 
 <body>
@@ -25,11 +25,11 @@
                 <div class="navbar__seller">
                     <div class="navbar__seller-content">
                         <a href="">
-                            <img src="../../assets/img/Public Image/Logo.png" alt="" class="navbar__seller-img" />
+                            <img src="../assets/img/Public Image/Logo.png" alt="" class="navbar__seller-img">
                         </a>
 
                         <div class="navbar__seller-shop-info">
-                            <img src="../../assets/img/Public Image/avtshop.png" alt="" class="navbar__seller-shop-info-img" />
+                            <img src="../assets/img/Public Image/avtshop.png" alt="" class="navbar__seller-shop-info-img">
                             <span class="navbar__seller-shop-info-name">Tên cửa hàng</span>
                         </div>
 
@@ -39,38 +39,23 @@
                                     <i class="fas fa-chart-pie navbar__seller-category-item-icon"></i>
                                     <span class="navbar__seller-category-item-title">Tổng quan</span>
                                 </li>
-                                <li class="navbar__seller-category-item navbar__seller-category-products">
-                                    <div class="js-category-products" style="height: 30px">
+                                <li class="navbar__seller-category-products" style="height: 50px;">
+                                    <div class="js-category-products navbar__seller-category-item" style="height: 30px;">
                                         <i class="fas fa-list navbar__seller-category-item-icon"></i>
                                         <span class="navbar__seller-category-item-title">Danh sách sản phẩm</span>
                                     </div>
                                     <ul class="navbar__seller-category-products-list">
-                                        <li class="navbar__seller-category-products-item">
-                                            Rau Củ
-                                        </li>
-                                        <li class="navbar__seller-category-products-item">
-                                            Thịt
-                                        </li>
-                                        <li class="navbar__seller-category-products-item">
-                                            Trái Cây
-                                        </li>
-                                        <li class="navbar__seller-category-products-item">
-                                            Mẹ & Bé
-                                        </li>
-                                        <li class="
-                          navbar__seller-category-products-item
-                          js-product-manage
-                        ">
+                                        <li class="navbar__seller-category-products-item">Rau Củ</li>
+                                        <li class="navbar__seller-category-products-item">Thịt</li>
+                                        <li class="navbar__seller-category-products-item">Trái Cây</li>
+                                        <li class="navbar__seller-category-products-item">Mẹ & Bé</li>
+                                        <li class="navbar__seller-category-products-item js-product-manage">
                                             <i class="fas fa-cog"></i> Quản lý danh mục
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="navbar__seller-category-item">
-                                    <i class="
-                        fas
-                        fa-clipboard-list
-                        navbar__seller-category-item-icon
-                      "></i>
+                                <li class="navbar__seller-category-item navbar__seller-category-item-active">
+                                    <i class="fas fa-clipboard-list navbar__seller-category-item-icon"></i>
                                     <span class="navbar__seller-category-item-title">Đơn hàng</span>
                                 </li>
                                 <li class="navbar__seller-category-item">
@@ -83,6 +68,7 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                     <div class="navbar__seller-out">
                         <i class="fas fa-sign-out-alt navbar__seller-out-icon"></i>
@@ -92,89 +78,119 @@
             </div>
 
             <div class="grid__5column-6">
-                <div class="header__seller-title">Thông tin cửa hàng</div>
+                <div class="header__seller-title">Đơn hàng</div>
 
                 <!-- Mn code ở đây nha -->
-                <div class="order-detail">
-                    <div class="order-detail__info">
-                        <div class="order-detail__info-content">
-                            <div class="order-detail__info-title">Thông tin cửa hàng</div>
-                            <hr class="divider" />
-                            <div class="order-detail__info-detail">
-                                <table class="order-detail__info-detail-table">
-                                    <colgroup>
-                                        <col span="1" style="width: 20%; margin: 0 5px" />
-                                        <col span="1" style="width: 80%; margin: 0 5px" />
-                                    </colgroup>
-                                    <tr>
-                                        <td>Tên cửa hàng</td>
-                                        <td>Shop .............</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Địa chỉ cửa hàng</td>
-                                        <td>
-                                            KTX Khu B, ĐHQG TPHCM, phường Đông Hòa, TP Dĩ An, Bình Dương
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ngày tạo cửa hàng</td>
-                                        <td>16/10/2021</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tổng sản phẩm</td>
-                                        <td>300</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tổng sản phẩm bán được</td>
-                                        <td>200</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tổng doanh thu</td>
-                                        <td>30.000.000</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
+                <div class="order">
+                    <div class="header-search__btn order__search">
+                        <input type="text" placeholder="Tìm kiếm đơn hàng ..." class="header-search__btn-input">
+                        <i class="fas fa-search header-search__btn-icon"></i>
                     </div>
 
-                    <div class="order-detail__control">
-                        <button onclick="location.href='./EditShopDetail.html'" class="primary-button order-detail__control-btn">
-              Chỉnh sửa thông tin
-            </button>
-                    </div>
-
-                    <div class="order-detail__info">
-                        <div class="order-detail__info-content">
-                            <div class="order-detail__info-title">Tài khoản</div>
-                            <hr class="divider" />
-                            <div class="order-detail__info-detail">
-                                <table class="order-detail__info-detail-table">
-                                    <colgroup>
-                                        <col span="1" style="width: 20%; margin: 0 5px" />
-                                        <col span="1" style="width: 80%; margin: 0 5px" />
-                                    </colgroup>
-                                    <tr>
-                                        <td>Tên đăng nhập</td>
-                                        <td>123456789</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mật khẩu</td>
-                                        <td>********</td>
-                                    </tr>
-                                    <tr>
-                                        <td>SĐT hoặc Email</td>
-                                        <td>emailloremispum@gmail.com</td>
-                                    </tr>
-                                </table>
-                            </div>
+                    <div class="order__product">
+                        <div class="order__product-title">
+                            <div>Mã đơn hàng</div>
+                            <div>Tên khách hàng</div>
+                            <div>Ngày mua</div>
+                            <div>Tổng tiền</div>
                         </div>
-                    </div>
-                    <div class="order-detail__control">
-                        <button onclick="location.href='./EditShopAccount.html'" class="primary-button order-detail__control-btn">
-              Chỉnh sửa thông tin
-            </button>
+
+                        <div class="order__list">
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                            <ul class="order__item">
+                                <li>DH12345678</li>
+                                <li>Nguyễn Hạnh My</li>
+                                <li>15/10/2021</li>
+                                <li>345.000</li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -292,7 +308,7 @@
         </div>
     </div>
 
-    <script src="../../assets/js/Seller Mode/baseSeller.js"></script>
+    <script src="../assets/js/Seller Mode/baseSeller.js"></script>
 </body>
 
 </html>

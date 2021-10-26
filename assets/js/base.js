@@ -24,7 +24,6 @@ function hideForm() {
     modal.classList.remove('open');
     registerForm.classList.remove('open');
     loginForm.classList.remove('open');
-    // editProductForm.classList.remove('open');
 }
 
 for (const registerBtn of registerBtns) {
@@ -44,6 +43,25 @@ modal.addEventListener('click', hideForm);
 modalBody.addEventListener('click', function(event) {
     event.stopPropagation(modalBody);
 })
+
+// Show/Hide Password
+var tables = document.querySelectorAll(".edit-table");
+
+function showHide(input, icon) {
+    type = input.getAttribute("type") === "password" ? "text" : "password";
+    input.setAttribute("type", type);
+    icon.classList.toggle("fa-eye-slash");
+}
+
+for (var table of tables) {
+    table.addEventListener("click", (event) => {
+        if (event.target.matches("#togglePassword")) {
+            var icon = event.target;
+            var input = icon.previousElementSibling;
+            showHide(input, icon);
+        }
+    });
+}
 
 // Login with Google
 const loginGoogleBtns = document.querySelectorAll('.js-login-google');

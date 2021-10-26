@@ -10,25 +10,23 @@ for (var categoryProductsListItem of categoryProductsListItems) {
 }
 
 var categoryProductsHeight = categoryProducts.clientHeight;
-var height = categoryProductsHeight + count * 26 + 5;
+var height = categoryProductsHeight + count * 29 + 5;
 
 const navbarSeller = document.querySelector('.navbar__seller');
 const navbarSellerContent = document.querySelector('.navbar__seller-content');
 var navbarSellerContentHeight = navbarSellerContent.clientHeight;
 var navbarSellerHeight = navbarSeller.clientHeight;
+var listProductsHeight = count * 29 + 5;
 var remainHeight = navbarSellerHeight - navbarSellerContentHeight;
-var listProductsHeight = count * 26 + 5;
-
 
 categoryProductsJS.addEventListener('click', function() {
-
-
     if (categoryProducts.clientHeight == categoryProductsHeight) {
         if (listProductsHeight <= remainHeight) {
             navbarSeller.style = 'height: ' + navbarSellerHeight + 'px';
         } else {
             navbarSeller.style = 'height: calc(' + navbarSellerHeight + 'px + ' + listProductsHeight + 'px - ' + remainHeight + 'px)';
         }
+
         categoryProductsList.style = 'display: block';
         categoryProducts.style = 'height: ' + height + 'px';
     } else {
@@ -37,9 +35,6 @@ categoryProductsJS.addEventListener('click', function() {
         navbarSeller.style = 'height: ' + navbarSellerHeight + 'px';
     }
 });
-
-
-
 
 // Product Catalog Management: tắt/mở
 const modal = document.querySelector('.js-modal');

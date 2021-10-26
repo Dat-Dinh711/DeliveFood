@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng - DeliveFood</title>
+    <title>Đơn mua - DeliveFood</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/Cart.css">
+    <link rel="stylesheet" href="./assets/css/Order.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="./assets/img/Public Image/Logo.png" type="image/x-icon">
@@ -219,19 +219,19 @@
                     <ul class="navbar-list">
                         <li class="navbar-item">
                             <a href="" class="nav-link">
-                            Trang chủ
-                        </a>
+                                Trang chủ
+                            </a>
                         </li>
                         <li class="navbar-item">
                             <a href="" class="nav-link">
-                            Về chúng tôi
-                        </a>
+                                Về chúng tôi
+                            </a>
                         </li>
                         <li class="navbar-item menu-products">
                             <a href="" class="nav-link">
-                            Danh sách sản phẩm
-                            <i class="fas fa-caret-down"></i>
-                        </a>
+                                Danh sách sản phẩm
+                                <i class="fas fa-caret-down"></i>
+                            </a>
 
                             <ul class="dropdown__menu-products">
                                 <ul class="dropdown__menu-products-list">
@@ -268,8 +268,8 @@
                         </li>
                         <li class="navbar-item">
                             <a href="" class="nav-link">
-                            Công thức
-                        </a>
+                                Công thức
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -278,182 +278,296 @@
         </header>
 
         <div class="container">
-            <div class="grid">
-                <div class="container-content">
-                    <div class="cart__header cart__card">
-                        <div class="checkbox">
-                            <input type="checkbox" name="checkall" />
-                        </div>
-                        <div class="sanpham">
-                            Sản phẩm
-                        </div>
-                        <div class="dongia">
-                            Đơn giá
-                        </div>
-                        <div class="soluong">
-                            Số lượng
-                        </div>
-                        <div class="sotien">
-                            Số tiền
-                        </div>
-                        <div class="thaotac">
-                            Thao tác
-                        </div>
+            <div class="container-content">
+                <div class="grid">
+                    <div class="order-all__navbar">
+                        <ul class="order-all__navbar-list">
+                            <li class="order-all__navbar-item">Tất cả</li>
+                            <li class="order-all__navbar-item order-all__navbar-item-active">Chờ xác nhận</li>
+                            <li class="order-all__navbar-item">Chờ tài xế</li>
+                            <li class="order-all__navbar-item">Đang giao</li>
+                            <li class="order-all__navbar-item">Đã giao</li>
+                            <li class="order-all__navbar-item">Đã hủy</li>
+                        </ul>
                     </div>
-                    <div class="cart__card cart__items">
-                        <div class="checkbox">
-                            <input type="checkbox" />
+
+                    <div class="order-all__search">
+                        <i class="fas fa-search order-all__search-icon"></i>
+                        <input type="text" placeholder="Tìm kiếm theo tên Shop, ID đơn hàng hoặc Tên sản phẩm" class="order-all__search-icon-input">
+                    </div>
+
+                    <div class="order-all__item-has">
+                        <div class="order-all__item-content-no-order">
+                            <img src="./assets/img/Order/No_order.png" alt="">
+                            <span class="order-all__item-content-no-order-title">Chưa có đơn hàng</span>
                         </div>
-                        <div class="sanpham">
-                            <div class="sanPhamCoHinh">
-                                <img src="assets/img/Products/Bông cải xanh.jpg" />
-                                <span class="textSP">Bông cải xanh</span>
+
+                        <div class="order-all__item-multi">
+                            <div class="order-all__item order-all__status-success">
+                                <div class="order-all__item-content">
+                                    <div class="order-all__info">
+                                        <div class="order-all__info-shop">
+                                            <a href="" class="order-all__info-shop-name">Tên shop</a>
+                                            <a href="" style="text-decoration:none">
+                                                <div class="order-all__info-shop-contact">
+                                                    <i class="fas fa-comments order-all__info-shop-contact-chat-icon"></i>
+                                                    <span class="order-all__info-shop-contact-chat-tittle">Chat Ngay</span>
+                                                </div>
+                                            </a>
+                                            <a href="" style="text-decoration:none">
+                                                <div class="order-all__info-shop-contact">
+                                                    <i class="fas fa-store order-all__info-shop-contact-visit-icon"></i>
+                                                    <span class="order-all__info-shop-contact-visit-tittle">Xem Shop</span>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="order-all__status">
+                                            <span class="order-all__status-content order-all__status-success-content">Giao hàng thành công</span>
+                                            <span class="order-all__status-content order-all__status-confirm-content">Đang chờ xác nhận</span>
+                                            <span class="order-all__status-content order-all__status-shipper-content">Đang chờ tài xế</span>
+                                            <span class="order-all__status-content order-all__status-delivering-content">Đang giao</span>
+                                            <span class="order-all__status-content order-all__status-cancel-content">Đã hủy</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-all__product">
+                                        <div class="order-all__product-info">
+                                            <a href="">
+                                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="order-all__product-img">
+                                            </a>
+
+                                            <div class="order-all__product-detail">
+                                                <a href="" class="order-all__product-name">Bông Cải Xanh</a>
+                                                <div class="order-all__product-quantity">x1</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-all__product-price">36.000 VND</div>
+                                    </div>
+
+                                    <div class="order-all__product-total">
+                                        <div></div>
+                                        <div>
+                                            <span>Tổng số tiền</span>
+                                            <span class="order-all__product-total-price">50.000 VND</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-all__control">
+                                        <div></div>
+                                        <div>
+                                            <button class="primary-button order-all__control-btn order-all__control-success-cancel">Mua lại</button>
+                                            <button class="secondary-button order-all__control-btn order-all__control-confirm-shipper">Hủy đơn hàng</button>
+                                            <button class="primary-button order-all__control-btn order-all__control-confirm-shipper">Liên hệ người bán</button>
+                                            <button class="primary-button order-all__control-btn order-all__control-delivering">Đã nhận được hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dongia">
-                            <span>₫25.000</span>
-                        </div>
-                        <div class="soluong">
-                            <input type="number" value="1" min="1" step="1">
-                        </div>
-                        <div class="sotien">
-                            <span>₫25.000</span>
-                        </div>
-                        <div class="thaotac">
-                            <button>Xóa</button>
+
+                            <div class="order-all__item order-all__status-success">
+                                <div class="order-all__item-content">
+                                    <div class="order-all__info">
+                                        <div class="order-all__info-shop">
+                                            <a href="" class="order-all__info-shop-name">Tên shop</a>
+                                            <a href="" style="text-decoration:none">
+                                                <div class="order-all__info-shop-contact">
+                                                    <i class="fas fa-comments order-all__info-shop-contact-chat-icon"></i>
+                                                    <span class="order-all__info-shop-contact-chat-tittle">Chat Ngay</span>
+                                                </div>
+                                            </a>
+                                            <a href="" style="text-decoration:none">
+                                                <div class="order-all__info-shop-contact">
+                                                    <i class="fas fa-store order-all__info-shop-contact-visit-icon"></i>
+                                                    <span class="order-all__info-shop-contact-visit-tittle">Xem Shop</span>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="order-all__status">
+                                            <span class="order-all__status-content order-all__status-success-content">Giao hàng thành công</span>
+                                            <span class="order-all__status-content order-all__status-confirm-content">Đang chờ xác nhận</span>
+                                            <span class="order-all__status-content order-all__status-shipper-content">Đang chờ tài xế</span>
+                                            <span class="order-all__status-content order-all__status-delivering-content">Đang giao</span>
+                                            <span class="order-all__status-content order-all__status-cancel-content">Đã hủy</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-all__product">
+                                        <div class="order-all__product-info">
+                                            <a href="">
+                                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="order-all__product-img">
+                                            </a>
+
+                                            <div class="order-all__product-detail">
+                                                <a href="" class="order-all__product-name">Bông Cải Xanh</a>
+                                                <div class="order-all__product-quantity">x1</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-all__product-price">36.000 VND</div>
+                                    </div>
+
+                                    <div class="order-all__product">
+                                        <div class="order-all__product-info">
+                                            <a href="">
+                                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="order-all__product-img">
+                                            </a>
+
+                                            <div class="order-all__product-detail">
+                                                <a href="" class="order-all__product-name">Bông Cải Xanh</a>
+                                                <div class="order-all__product-quantity">x1</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-all__product-price">36.000 VND</div>
+                                    </div>
+
+                                    <div class="order-all__product-total">
+                                        <div></div>
+                                        <div>
+                                            <span>Tổng số tiền</span>
+                                            <span class="order-all__product-total-price">50.000 VND</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-all__control">
+                                        <div></div>
+                                        <div>
+                                            <button class="primary-button order-all__control-btn order-all__control-success-cancel">Mua lại</button>
+                                            <button class="secondary-button order-all__control-btn order-all__control-confirm-shipper">Hủy đơn hàng</button>
+                                            <button class="primary-button order-all__control-btn order-all__control-confirm-shipper">Liên hệ người bán</button>
+                                            <button class="primary-button order-all__control-btn order-all__control-delivering">Đã nhận được hàng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="cart__card cart__checkout">
-                        <div class="thanhTien">
-                            <span class="text1">Tổng thanh toán (1 sản phẩm):</span>
-                            <span class="text2">₫25.000</span>
-                        </div>
-                        <div class="thanhToan">
-                            <button class="primary-button">Mua hàng</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer">
-            <div class="grid">
-                <div class="footer-content">
-                    <div class="grid__column-4 footer__customer-service">
-                        <span class="footer__customer-service-title">CHĂM SÓC KHÁCH HÀNG</span>
-                        <ul class="footer__customer-service-desc">
-                            <li class="footer__customer-service-item">
-                                <a href="" class="footer__customer-service-link">
-                  Hotline: 1900 1111
-                </a>
+        <div class="footer ">
+            <div class="grid ">
+                <div class="footer-content ">
+                    <div class="grid__column-4 footer__customer-service ">
+                        <span class="footer__customer-service-title ">CHĂM SÓC KHÁCH HÀNG</span>
+                        <ul class="footer__customer-service-desc ">
+                            <li class="footer__customer-service-item ">
+                                <a href=" " class="footer__customer-service-link ">
+                                        Hotline: 1900 1111
+                                    </a>
                             </li>
-                            <li class="footer__customer-service-item">
-                                <a href="" class="footer__customer-service-link">
-                  Các câu hỏi thường gặp
-                </a>
+                            <li class="footer__customer-service-item ">
+                                <a href=" " class="footer__customer-service-link ">
+                                        Các câu hỏi thường gặp
+                                    </a>
                             </li>
-                            <li class="footer__customer-service-item">
-                                <a href="" class="footer__customer-service-link">
-                  Hướng dẫn đặt hàng
-                </a>
+                            <li class="footer__customer-service-item ">
+                                <a href=" " class="footer__customer-service-link ">
+                                        Hướng dẫn đặt hàng
+                                    </a>
                             </li>
-                            <li class="footer__customer-service-item">
-                                <a href="" class="footer__customer-service-link">
-                  Chính sách đổi trả
-                </a>
+                            <li class="footer__customer-service-item ">
+                                <a href=" " class="footer__customer-service-link ">
+                                        Chính sách đổi trả
+                                    </a>
                             </li>
-                            <li class="footer__customer-service-item">
-                                <a href="" class="footer__customer-service-link">
-                  Hỗ trợ khách hàng
-                </a>
+                            <li class="footer__customer-service-item ">
+                                <a href=" " class="footer__customer-service-link ">
+                                        Hỗ trợ khách hàng
+                                    </a>
                             </li>
-                            <li class="footer__customer-service-item">
-                                <a href="" class="footer__customer-service-link">
-                  Báo lỗi mật khẩu: security@delivefood.vn
-                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="grid__column-4 footer__about">
-                        <span class="footer__about-title">VỀ DELIVEFOOD</span>
-                        <ul class="footer__about-desc">
-                            <li class="footer__about-item">
-                                <a href="" class="footer__about-link">
-                  Giới thiệu
-                </a>
-                            </li>
-                            <li class="footer__about-item">
-                                <a href="" class="footer__about-link">
-                  Chính sách bảo mật thanh toán
-                </a>
-                            </li>
-                            <li class="footer__about-item">
-                                <a href="" class="footer__about-link">
-                  Chính sách bảo mật thông tin cá nhân
-                </a>
-                            </li>
-                            <li class="footer__about-item">
-                                <a href="" class="footer__about-link">
-                  Chính sách giải quyết khiếu nại
-                </a>
-                            </li>
-                            <li class="footer__about-item">
-                                <a href="" class="footer__about-link">
-                  Điều khoản sử dụng
-                </a>
-                            </li>
-                            <li class="footer__about-item">
-                                <a href="" class="footer__about-link">
-                  Bán hàng doanh nghiệp
-                </a>
+                            <li class="footer__customer-service-item ">
+                                <a href=" " class="footer__customer-service-link ">
+                                        Báo lỗi mật khẩu: security@delivefood.vn
+                                    </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="grid__column-4 footer__partner-pay">
-                        <div class="footer__partner">
-                            <span class="footer__partner-title">ĐỐI TÁC LIÊN KẾT</span>
-                            <ul class="footer__partner-desc">
-                                <li class="footer__partner-item">
-                                    <img src="./assets/img/Public Image/GrabExpress.png" alt="" class="footer__partner-img">
+                    <div class="grid__column-4 footer__about ">
+                        <span class="footer__about-title ">VỀ DELIVEFOOD</span>
+                        <ul class="footer__about-desc ">
+                            <li class="footer__about-item ">
+                                <a href=" " class="footer__about-link ">
+                                        Giới thiệu
+                                    </a>
+                            </li>
+                            <li class="footer__about-item ">
+                                <a href=" " class="footer__about-link ">
+                                        Chính sách bảo mật thanh toán
+                                    </a>
+                            </li>
+                            <li class="footer__about-item ">
+                                <a href=" " class="footer__about-link ">
+                                        Chính sách bảo mật thông tin cá nhân
+                                    </a>
+                            </li>
+                            <li class="footer__about-item ">
+                                <a href=" " class="footer__about-link ">
+                                        Chính sách giải quyết khiếu nại
+                                    </a>
+                            </li>
+                            <li class="footer__about-item ">
+                                <a href=" " class="footer__about-link ">
+                                        Điều khoản sử dụng
+                                    </a>
+                            </li>
+                            <li class="footer__about-item ">
+                                <a href=" " class="footer__about-link ">
+                                        Bán hàng doanh nghiệp
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-4 footer__partner-pay ">
+                        <div class="footer__partner ">
+                            <span class="footer__partner-title ">ĐỐI TÁC LIÊN KẾT</span>
+                            <ul class="footer__partner-desc ">
+                                <li class="footer__partner-item ">
+                                    <img src="./assets/img/Public Image/GrabExpress.png " alt=" " class="footer__partner-img ">
                                 </li>
-                                <li class="footer__partner-item">
-                                    <img src="./assets/img/Public Image/AhaMove.png" alt="" class="footer__partner-img">
+                                <li class="footer__partner-item ">
+                                    <img src="./assets/img/Public Image/AhaMove.png " alt=" " class="footer__partner-img ">
                                 </li>
-                                <li class="footer__partner-item">
-                                    <img src="./assets/img/Public Image/Be.png" alt="" class="footer__partner-img">
+                                <li class="footer__partner-item ">
+                                    <img src="./assets/img/Public Image/Be.png " alt=" " class="footer__partner-img ">
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="footer__pay">
-                            <span class="footer__pay-title">PHƯƠNG THỨC THANH TOÁN</span>
-                            <ul class="footer__pay-desc">
-                                <li class="footer__pay-item">
-                                    <img src="./assets/img/Public Image/Visa.png" alt="" class="footer__pay-img">
+                        <div class="footer__pay ">
+                            <span class="footer__pay-title ">PHƯƠNG THỨC THANH TOÁN</span>
+                            <ul class="footer__pay-desc ">
+                                <li class="footer__pay-item ">
+                                    <img src="./assets/img/Public Image/Visa.png " alt=" " class="footer__pay-img ">
                                 </li>
-                                <li class="footer__pay-item">
-                                    <img src="./assets/img/Public Image/MasterCard.png" alt="" class="footer__pay-img">
+                                <li class="footer__pay-item ">
+                                    <img src="./assets/img/Public Image/MasterCard.png " alt=" " class="footer__pay-img ">
                                 </li>
-                                <li class="footer__pay-item">
-                                    <img src="./assets/img/Public Image/Money.png" alt="" class="footer__pay-img">
+                                <li class="footer__pay-item ">
+                                    <img src="./assets/img/Public Image/Money.png " alt=" " class="footer__pay-img ">
                                 </li>
-                                <li class="footer__pay-item">
-                                    <img src="./assets/img/Public Image/OnlineBanking.png" alt="" class="footer__pay-img">
+                                <li class="footer__pay-item ">
+                                    <img src="./assets/img/Public Image/OnlineBanking.png " alt=" " class="footer__pay-img ">
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="grid__column-4 footer__connect">
-                        <span class="footer__connect-title">KẾT NỐI VỚI CHÚNG TÔI</span>
-                        <div class="footer__connect-desc">
-                            <img src="./assets/img/Public Image/QR_Code.png" alt="" class="footer__connect-qr">
-                            <div class="footer__connect-apps">
-                                <img src="./assets/img/Public Image/gg play.png" alt="" class="footer__connect-apps-img">
-                                <img src="./assets/img/Public Image/app store.png" alt="" class="footer__connect-apps-img">
+                    <div class="grid__column-4 footer__connect ">
+                        <span class="footer__connect-title ">KẾT NỐI VỚI CHÚNG TÔI</span>
+                        <div class="footer__connect-desc ">
+                            <img src="./assets/img/Public Image/QR_Code.png " alt=" " class="footer__connect-qr ">
+                            <div class="footer__connect-apps ">
+                                <img src="./assets/img/Public Image/gg play.png " alt=" " class="footer__connect-apps-img ">
+                                <img src="./assets/img/Public Image/app store.png " alt=" " class="footer__connect-apps-img ">
                             </div>
                         </div>
                     </div>
@@ -571,7 +685,7 @@
         </div>
     </div>
 
-    <script src="./assets/js/base.js"></script>
+    <script src="./assets/js/base.js "></script>
 </body>
 
 </html>

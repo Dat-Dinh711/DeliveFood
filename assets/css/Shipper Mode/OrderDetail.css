@@ -1,0 +1,24 @@
+.navbar__seller {
+    height: 754px;
+}
+
+.order-detail__info-contract div:first-child {
+    margin-bottom: 5px;
+}
+
+.order-detail {
+    height: 89%;
+    margin-top: 18px;
+}
+
+.order-detail__info {
+    height: 22%;
+}
+
+.order-detail__product {
+    margin: 18px 0 5px 0;
+}
+
+.order-detail__control {
+    margin-top: 0;
+}
