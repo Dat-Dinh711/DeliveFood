@@ -283,16 +283,19 @@
                 <div class="container-content">
                     <div class="container__product">
                         <div class="container__product-img">
-                            <div class="img-cover">
-                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Sản phẩm" class="container__product-imglarger">
-                                <div id="zoom"></div>
+                            <div class="screen-img">
+                                <img id="product-image" src="./assets/img/Products/Bông cải xanh.jpg" alt="Sản phẩm" > 
                             </div>
                             <div class="container__product-img-list">
-                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="product-img-item-active container__product-img-item">
-                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
-                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
-                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
-                                <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
+                                <div class="container__product-img-list-items">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">                               
+                                </div>
                                 <div class="next-slick next-slick-prev" style="left:0; bottom: 38%;">
                                     <i class="fas fa-chevron-left"></i>
                                 </div>
@@ -326,24 +329,24 @@
                             <div class="line-block "></div>
                             <div class="product-type " style="display: flex; margin: 15px 0; ">
                                 <span style="font-size: 15px; padding: 10px 0; ">Khối lượng</span>
-                                <div class="product-type-item ">
-                                    <button class="type-item type-item-active ">300g
+                                <div class="product-type-item">
+                                    <button class="type-item type-item-active" onclick="selectProductType()">300g
                                         <div class="type-item-active-tick ">
                                             <i class="fas fa-check "></i>
                                         </div>
                                     </button>
-                                    <button class="type-item ">600g</button>
-                                    <button class="type-item ">1kg</button>
+                                    <button class="type-item" >600g</button>
+                                    <button class="type-item" onclick="selectProductType()">1kg</button>
                                 </div>
                             </div>
                             <div class="quantity ">
                                 <span style="font-size: 15px; padding: 10px 0; ">Số lượng</span>
                                 <div class="block-quantity ">
-                                    <button class="quantity-btn " style="border-radius: 8px 0px 0px 8px; ">
+                                    <button class="quantity-btn btn-minus" style="border-radius: 8px 0px 0px 8px; ">
                                         <i class="fas fa-minus "></i>
                                     </button>
-                                    <input type="text " class="quantity-btn quantity-btn-count " role="spinbutton " aria-valuenow="1 " value="1 ">
-                                    <button class="quantity-btn " style="border-radius: 0px 8px 8px 0px; ">
+                                    <input type="text" min="1" class="quantity-btn quantity-btn-count " role="spinbutton " aria-valuenow="1 " value="1 ">
+                                    <button class="quantity-btn btn-plus" onclick="countProduct()" style="border-radius: 0px 8px 8px 0px; ">
                                         <i class="fas fa-plus "></i>
                                     </button>
                                 </div>
@@ -1046,7 +1049,12 @@
     </div>
 
     <script src="./assets/js/base.js"></script>
-    <script type="text/javascript" src="./assets/js/ProductDetails.js"></script>
+    <script src="./assets/js/ProductDetails.js"></script>
+    <script>
+        /* Execute the magnify function: */
+        magnify("product-image", 3);
+        /* Specify the id of the image, and the strength of the magnifier glass: */
+    </script>
 </body>
 
 </html>
