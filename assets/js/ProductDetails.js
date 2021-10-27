@@ -190,15 +190,12 @@ function selectProductType(e){
   select.style.backgroundColor='red';
 }*/
 
-/*var btnSelect = document.getElementsByClassName('type-item');
+var btnSelect = document.getElementsByClassName('type-item');
     btnSelect.onclick = function(){
         showMsg1();
     };
      
     function showMsg1(){
       btnSelect.style.color='red';
-    }*/
-    const btnSelect=document.querySelectorAll('.type-item');
-    btnSelect.addEventListener('click',function(){
-      btnSelect.style.color="red";
-    },false);
+    }
+    
