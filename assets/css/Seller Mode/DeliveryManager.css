@@ -52,6 +52,11 @@
     list-style: none;
     margin: 0 0 0 15px;
     border-bottom: 1px solid var(--product-border);
+    cursor: pointer;
+}
+
+.delivery__item:hover {
+    background-color: #fefefe;
 }
 
 .delivery__item li {

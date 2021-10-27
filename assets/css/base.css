@@ -1522,7 +1522,7 @@ body {
     padding-bottom: 13px;
     color: #474747;
     font-size: 1.6rem;
-    transition: 0.5s;
+    cursor: pointer;
 }
 
 .navbar__seller-category-products-item:last-child {

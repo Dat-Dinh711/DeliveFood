@@ -8,7 +8,7 @@
     <title>DeliveFood</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/css/Seller Mode/OverviewShop.css">
+    <link rel="stylesheet" href="../assets/css/Seller Mode/OrderReceivedDetail.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="../assets/img/Public Image/Logo.png" type="image/x-icon">
@@ -35,7 +35,7 @@
 
                         <div class="navbar__seller-category">
                             <ul class="navbar__seller-category-list">
-                                <li class="navbar__seller-category-item navbar__seller-category-item-active">
+                                <li class="navbar__seller-category-item">
                                     <i class="fas fa-chart-pie navbar__seller-category-item-icon"></i>
                                     <span class="navbar__seller-category-item-title">Tổng quan</span>
                                 </li>
@@ -45,16 +45,18 @@
                                         <span class="navbar__seller-category-item-title">Danh sách sản phẩm</span>
                                     </div>
                                     <ul class="navbar__seller-category-products-list">
+                                        <li class="navbar__seller-category-products-item">Tất cả</li>
                                         <li class="navbar__seller-category-products-item">Rau Củ</li>
                                         <li class="navbar__seller-category-products-item">Thịt</li>
                                         <li class="navbar__seller-category-products-item">Trái Cây</li>
                                         <li class="navbar__seller-category-products-item">Mẹ & Bé</li>
+                                        <li class="navbar__seller-category-products-item">Không có danh mục</li>
                                         <li class="navbar__seller-category-products-item js-product-manage">
                                             <i class="fas fa-cog"></i> Quản lý danh mục
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="navbar__seller-category-item">
+                                <li class="navbar__seller-category-item navbar__seller-category-item-active">
                                     <i class="fas fa-clipboard-list navbar__seller-category-item-icon"></i>
                                     <span class="navbar__seller-category-item-title">Đơn hàng</span>
                                 </li>
@@ -78,55 +80,196 @@
             </div>
 
             <div class="grid__5column-6">
-                <div class="header__seller-title">Tổng quan</div>
+                <div class="header__seller-title">Chi Tiết Đơn Hàng</div>
 
                 <!-- Mn code ở đây nha -->
-                <div class="overview">
-                    <div class="overview__info">
-                        <div class="overview__info-content">
-                            <div class="overview__info-title">Hoạt động</div>
+                <div class="order-detail">
+                    <div class="order-detail__info">
+                        <div class="order-detail__info-content">
+                            <div class="order-detail__info-title">Địa chỉ người nhận</div>
 
-                            <div class="overview__info-contract">
-                                <div class="overview__info-contract-soluong">
-                                    <label>Số đơn hàng</label>
-                                    <span>56</span>
+                            <div class="order-detail__info-contract">
+                                <div class="order-detail__info-contract-name">NGUYỄN HẠNH MY</div>
+                                <div class="order-detail-info-contract-address">
+                                    <label for="">Địa chỉ:</label>
+                                    <span>KTX khu B, ĐHQG TPHCM, phường Đông Hòa, TP Dĩ An, tỉnh Bình Dương</span>
                                 </div>
-                                <div class="overview__info-contract-soluong">
-                                    <label for="">Số sản phẩm bán được</label>
-                                    <span>210</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="overview__info-content">
-                            <div class="overview__info-title">Doanh thu</div>
-
-                            <div class="overview__info-contract">
-                                <div class="overview__info-contract-soluong">
-                                    <label>Tiền bán hàng</label>
-                                    <span>5000000</span>
-                                </div>
-
-                                <div class="overview__info-contract-soluong">
-                                    <label>Mức tăng trưởng so với tháng trước</label>
-                                    <span>10%</span>
+                                <div class="order-detail-info-contract-phone">
+                                    <label for="">Số điện thoại:</label>
+                                    <span>0825889808</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="overview__info-content">
-                            <div class="overview__info-title">Top sản phẩm bán chạy</div>
+                        <div class="order-detail__info-content">
+                            <div class="order-detail__info-title">Thông tin tài xế</div>
 
-                            <div class="overview__info-contract">
-                                <div class="overview__info-contract-tenspbanchay">
-                                    <span>Mì bò hầm cải chua Reeva hộp 100g</span>
-                                    <span>Mì bò hầm cải chua Reeva hộp 100g</span>
-                                    <span>Mì bò hầm cải chua Reeva hộp 100g</span>
+                            <div class="order-detail__info-contract" style="font-size: 1.6rem;">Chưa có tài xế nhận đơn hàng</div>
+
+                            <div class="order-detail__info-contract order-detail__info-contract-active">
+                                <div class="order-detail__info-contract-name">NGUYỄN HẠNH MY</div>
+                                <div class="order-detail-info-contract-address">
+                                    <label for="">Địa chỉ:</label>
+                                    <span>KTX khu B, ĐHQG TPHCM, phường Đông Hòa, TP Dĩ An, tỉnh Bình Dương</span>
                                 </div>
+                                <div class="order-detail-info-contract-license-plates">
+                                    <label for="">Biển số xe:</label>
+                                    <span>92N7 - 3724</span>
+                                </div>
+                                <div class="order-detail-info-contract-type-motor">
+                                    <label for="">Loại xe:</label>
+                                    <span>Wave Alpha</span>
+                                </div>
+                                <div class="order-detail-info-contract-phone">
+                                    <label for="">Số điện thoại:</label>
+                                    <span>0825889808</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-detail__info-content">
+                            <div class="order-detail__info-title">Hình thức thanh toán</div>
+
+                            <div class="order-detail__info-contract">
+                                <div>Thanh toán tiền mặt khi nhận hàng</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-detail__product">
+                        <div class="order-detail__product-title">
+                            <div>Sản phẩm</div>
+                            <div>Giá</div>
+                            <div>Số lượng</div>
+                            <div>Tạm tính</div>
+                        </div>
+
+                        <div class="order-detail__product-list">
+                            <ul class="order-detail__product-list-item">
+                                <li>
+                                    <img src="../assets/img/Order Detail/Mì bò hầm cải.jpg" alt="" class="order-detail__product-list-item-img">
+                                    <div>
+                                        <div>Mì bò hầm cải chua Reeva hộp 100g</div>
+                                        <div>#SP000001</div>
+                                    </div>
+                                </li>
+                                <li>12.000</li>
+                                <li>10</li>
+                                <li>120.000</li>
+                            </ul>
+
+                            <ul class="order-detail__product-list-item">
+                                <li>
+                                    <img src="../assets/img/Order Detail/Mì bò hầm cải.jpg" alt="" class="order-detail__product-list-item-img">
+                                    <div>
+                                        <div>Mì bò hầm cải chua Reeva hộp 100g</div>
+                                        <div>#SP000001</div>
+                                    </div>
+                                </li>
+                                <li>12.000</li>
+                                <li>10</li>
+                                <li>120.000</li>
+                            </ul>
+
+                            <ul class="order-detail__product-list-item">
+                                <li>
+                                    <img src="../assets/img/Order Detail/Mì bò hầm cải.jpg" alt="" class="order-detail__product-list-item-img">
+                                    <div>
+                                        <div>Mì bò hầm cải chua Reeva hộp 100g</div>
+                                        <div>#SP000001</div>
+                                    </div>
+                                </li>
+                                <li>12.000</li>
+                                <li>10</li>
+                                <li>120.000</li>
+                            </ul>
+
+                            <ul class="order-detail__product-list-item">
+                                <li>
+                                    <img src="../assets/img/Order Detail/Mì bò hầm cải.jpg" alt="" class="order-detail__product-list-item-img">
+                                    <div>
+                                        <div>Mì bò hầm cải chua Reeva hộp 100g</div>
+                                        <div>#SP000001</div>
+                                    </div>
+                                </li>
+                                <li>12.000</li>
+                                <li>10</li>
+                                <li>120.000</li>
+                            </ul>
+
+                            <ul class="order-detail__product-list-item">
+                                <li>
+                                    <img src="../assets/img/Order Detail/Mì bò hầm cải.jpg" alt="" class="order-detail__product-list-item-img">
+                                    <div>
+                                        <div>Mì bò hầm cải chua Reeva hộp 100g</div>
+                                        <div>#SP000001</div>
+                                    </div>
+                                </li>
+                                <li>12.000</li>
+                                <li>10</li>
+                                <li>120.000</li>
+                            </ul>
+
+                            <ul class="order-detail__product-list-item">
+                                <li>
+                                    <img src="../assets/img/Order Detail/Mì bò hầm cải.jpg" alt="" class="order-detail__product-list-item-img">
+                                    <div>
+                                        <div>Mì bò hầm cải chua Reeva hộp 100g</div>
+                                        <div>#SP000001</div>
+                                    </div>
+                                </li>
+                                <li>12.000</li>
+                                <li>10</li>
+                                <li>120.000</li>
+                            </ul>
+
+                            <ul class="order-detail__product-list-item">
+                                <li>
+                                    <img src="../assets/img/Order Detail/Mì bò hầm cải.jpg" alt="" class="order-detail__product-list-item-img">
+                                    <div>
+                                        <div>Mì bò hầm cải chua Reeva hộp 100g</div>
+                                        <div>#SP000001</div>
+                                    </div>
+                                </li>
+                                <li>12.000</li>
+                                <li>10</li>
+                                <li>120.000</li>
+                            </ul>
+
+                            <ul class="order-detail__product-list-item">
+                                <li>
+                                    <img src="../assets/img/Order Detail/Mì bò hầm cải.jpg" alt="" class="order-detail__product-list-item-img">
+                                    <div>
+                                        <div>Mì bò hầm cải chua Reeva hộp 100g</div>
+                                        <div>#SP000001</div>
+                                    </div>
+                                </li>
+                                <li>12.000</li>
+                                <li>10</li>
+                                <li>120.000</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="order-detail__product-price">
+                            <div>
+                                <span>Tổng tiền hàng:</span>
+                                <span>960.000</span>
+                            </div>
+
+                            <div>
+                                <span>Phí vận chuyển:</span>
+                                <span>25.000</span>
+                            </div>
+
+                            <div>
+                                <span>Tổng cộng:</span>
+                                <span>985.000</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

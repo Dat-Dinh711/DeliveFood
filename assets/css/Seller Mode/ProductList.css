@@ -1,4 +1,3 @@
-
 .product-list__search-and-button {
     display: flex;
     justify-content: space-between;
@@ -14,15 +13,9 @@
 }
 
 
-
-
-
-
-
 /* list */
-.product-list {
 
-}
+.product-list {}
 
 .product-list__product {
     border: 1px solid var(--product-border);
@@ -68,6 +61,11 @@
     list-style: none;
     margin: 0 0 0 15px;
     border-bottom: 1px solid var(--product-border);
+    cursor: pointer;
+}
+
+.product-list__item:hover {
+    background-color: #fefefe;
 }
 
 .product-list__item li {
