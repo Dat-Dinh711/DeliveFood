@@ -183,19 +183,16 @@ function handleChangeSlide(direction) {
 }
 
 //Chon khoi luong san pham
-//const select=document.getElementsByClassName("type-item");
 /*select.addEventListener("click",selectProductType);
 function selectProductType(e){
   //select.classList.add("type-item-active");
   select.style.backgroundColor='red';
 }*/
 
-var btnSelect = document.getElementsByClassName('type-item');
-    btnSelect.onclick = function(){
-        showMsg1();
-    };
-     
-    function showMsg1(){
-      btnSelect.style.color='red';
-    }
-    
+const select=document.querySelector(".product-type-item");
+/*select.addEventListener('click',selectProductType);
+function selectProductType(e){
+  select.classList.add("type-item-active");
+}*/
+
+select.style= 'display: flex';
