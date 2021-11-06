@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Công thức - DeliveFood</title>
+    <title>DeliveFood</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/Recipe.css">
+    <link rel="stylesheet" href="./assets/css/Account.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="./assets/img/Public Image/Logo.png" type="image/x-icon">
@@ -278,77 +279,178 @@
         </header>
 
         <div class="container">
+            <div class="account__content-modal-overlay"></div>
+
             <div class="grid">
                 <div class="container-content">
-                    <div class="container__title">Bí kíp vào bếp</div>
-                    <div class="container__topic">
-                        <div class="grid__row">
-                            <div class="grid__column-5">
-                                <div class="container__topic-item">
-                                    <a href="" class="container__topic-img-link">
-                                        <img src="./assets/img/công thức/bữa sáng.jpg" alt="" class="container__topic-img">
-                                    </a>
-                                    <a href="" class="container__topic-name">Bữa sáng tiện lợi</a>
-                                </div>
-                            </div>
+                    <div class="account__navbar">
+                        <div class="account__navbar-avt">
+                            <label class="account__navbar-avt-img">
+                                <input type="file" accept=".jpg,.jpeg,.png">
+                                <img src="./assets/img/Public Image/avatar-cus2.jpg" alt="Avatar">
 
-                            <div class="grid__column-5">
-                                <div class="container__topic-item">
-                                    <a href="" class="container__topic-img-link">
-                                        <img src="./assets/img/công thức/món chính.jpg" alt="" class="container__topic-img">
-                                    </a>
-                                    <a href="" class="container__topic-name">Món chính dinh dưỡng</a>
-                                </div>
-                            </div>
+                                <label class="account__navbar-avt-icon">
+                                    <input type="file" accept=".jpg,.jpeg,.png">
+                                    <i class="fas fa-camera"></i>
+                                </label>
+                            </label>
 
-                            <div class="grid__column-5">
-                                <div class="container__topic-item">
-                                    <a href="" class="container__topic-img-link">
-                                        <img src="./assets/img/công thức/đồ uống lành mạnh.jpg" alt="" class="container__topic-img">
-                                    </a>
-                                    <a href="" class="container__topic-name">Đồ uống lành mạnh</a>
-                                </div>
-                            </div>
+                            <span class="account__navbar-avt-name">Rosé</span>
+                        </div>
 
-                            <div class="grid__column-5">
-                                <div class="container__topic-item">
-                                    <a href="" class="container__topic-img-link">
-                                        <img src="./assets/img/công thức/bữa sáng.jpg" alt="" class="container__topic-img">
-                                    </a>
-                                    <a href="" class="container__topic-name">Bữa sáng tiện lợi</a>
-                                </div>
-                            </div>
-
-                            <div class="grid__column-5">
-                                <div class="container__topic-item">
-                                    <a href="" class="container__topic-img-link">
-                                        <img src="./assets/img/công thức/món chính.jpg" alt="" class="container__topic-img">
-                                    </a>
-                                    <a href="" class="container__topic-name">Món chính dinh dưỡng</a>
-                                </div>
-                            </div>
-
-                            <div class="grid__column-5">
-                                <div class="container__topic-item">
-                                    <a href="" class="container__topic-img-link">
-                                        <img src="./assets/img/công thức/bữa sáng.jpg" alt="" class="container__topic-img">
-                                    </a>
-                                    <a href="" class="container__topic-name">Bữa sáng tiện lợi</a>
-                                </div>
-                            </div>
-
-                            <div class="grid__column-5">
-                                <div class="container__topic-item">
-                                    <a href="" class="container__topic-img-link">
-                                        <img src="./assets/img/công thức/món chính.jpg" alt="" class="container__topic-img">
-                                    </a>
-                                    <a href="" class="container__topic-name">Món chính dinh dưỡng</a>
-                                </div>
-                            </div>
-
+                        <div class="account__navbar-selection">
+                            <ul class="account__navbar-selection-list">
+                                <li class="account__navbar-selection-item account__navbar-selection-item-active">Thông tin tài khoản</li>
+                                <li class="account__navbar-selection-item">Địa chỉ</li>
+                                <li class="account__navbar-selection-item">Mật khẩu</li>
+                            </ul>
                         </div>
                     </div>
 
+                    <div class="account__content">
+                        <div class="account__content-warpp">
+                            <div class="account__content-title">Thông tin tài khoản</div>
+
+                            <div class="account__content-info">
+                                <div class="account__content-info-title">
+                                    <ul class="account__content-info-title-list">
+                                        <li class="account__content-info-title-item">Tên Đăng Nhập</li>
+                                        <li class="account__content-info-title-item">SĐT hoặc Email</li>
+                                        <li class="account__content-info-title-item">Giới tính</li>
+                                        <li class="account__content-info-title-item">Ngày sinh</li>
+                                    </ul>
+                                </div>
+
+                                <div class="account__content-info-content">
+                                    <div class="account__content-info-content-username">Rosé</div>
+
+                                    <div class="account__content-info-content-sdt-email">
+                                        <input type="text">
+                                    </div>
+
+                                    <div class="account__content-info-content-gender">
+                                        <div>
+                                            <input type="radio" name="gender" id="male" value="male">
+                                            <label for="male">Nam</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="gender" id="female" value="female" checked>
+                                            <label for="female">Nữ</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="gender" id="other" value="other">
+                                            <label for="other">Khác</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="account__content-info-content-date">
+                                        <div class="js-date">
+                                            <span class="account__content-info-content-date-title js-date-title">11</span>
+                                            <i class="fas fa-chevron-down account__content-info-content-date-icon-down js-date-icon-down"></i>
+                                            <i class="fas fa-chevron-up account__content-info-content-date-icon-up js-date-icon-up" style="display: none;"></i>
+
+                                            <ul class="account__content-info-content-date-list js-date-list" style="display: none;">
+                                                <li class="account__content-info-content-date-item js-date-item">1</li>
+                                                <li class="account__content-info-content-date-item js-date-item">2</li>
+                                                <li class="account__content-info-content-date-item js-date-item">3</li>
+                                                <li class="account__content-info-content-date-item js-date-item">4</li>
+                                                <li class="account__content-info-content-date-item js-date-item">5</li>
+                                                <li class="account__content-info-content-date-item js-date-item">6</li>
+                                                <li class="account__content-info-content-date-item js-date-item">7</li>
+                                                <li class="account__content-info-content-date-item js-date-item">8</li>
+                                                <li class="account__content-info-content-date-item js-date-item">9</li>
+                                                <li class="account__content-info-content-date-item js-date-item">10</li>
+                                                <li class="account__content-info-content-date-item js-date-item">11</li>
+                                                <li class="account__content-info-content-date-item js-date-item">12</li>
+                                                <li class="account__content-info-content-date-item js-date-item">13</li>
+                                                <li class="account__content-info-content-date-item js-date-item">14</li>
+                                                <li class="account__content-info-content-date-item js-date-item">15</li>
+                                                <li class="account__content-info-content-date-item js-date-item">16</li>
+                                                <li class="account__content-info-content-date-item js-date-item">17</li>
+                                                <li class="account__content-info-content-date-item js-date-item">18</li>
+                                                <li class="account__content-info-content-date-item js-date-item">19</li>
+                                                <li class="account__content-info-content-date-item js-date-item">20</li>
+                                                <li class="account__content-info-content-date-item js-date-item">21</li>
+                                                <li class="account__content-info-content-date-item js-date-item">22</li>
+                                                <li class="account__content-info-content-date-item js-date-item">23</li>
+                                                <li class="account__content-info-content-date-item js-date-item">24</li>
+                                                <li class="account__content-info-content-date-item js-date-item">25</li>
+                                                <li class="account__content-info-content-date-item js-date-item">26</li>
+                                                <li class="account__content-info-content-date-item js-date-item">27</li>
+                                                <li class="account__content-info-content-date-item js-date-item">28</li>
+                                                <li class="account__content-info-content-date-item js-date-item">29</li>
+                                                <li class="account__content-info-content-date-item js-date-item">30</li>
+                                                <li class="account__content-info-content-date-item js-date-item">31</li>
+                                            </ul>
+                                        </div>
+                                        <div class="js-month">
+                                            <span class="account__content-info-content-date-title js-month-title">Tháng 2</span>
+                                            <i class="fas fa-chevron-down account__content-info-content-date-icon-down js-month-icon-down"></i>
+                                            <i class="fas fa-chevron-up account__content-info-content-date-icon-up js-month-icon-up" style="display: none;"></i>
+
+                                            <ul class="account__content-info-content-date-list js-month-list" style="display: none;">
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 1</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 2</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 3</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 4</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 5</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 6</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 7</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 8</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 9</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 10</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 11</li>
+                                                <li class="account__content-info-content-date-item js-month-item">Tháng 12</li>
+                                            </ul>
+                                        </div>
+                                        <div class="js-year">
+                                            <span class="account__content-info-content-date-title js-year-title">1997</span>
+                                            <i class="fas fa-chevron-down account__content-info-content-date-icon-down js-year-icon-down"></i>
+                                            <i class="fas fa-chevron-up account__content-info-content-date-icon-up js-year-icon-up" style="display: none;"></i>
+
+                                            <ul class="account__content-info-content-date-list js-year-list" style="display: none;">
+                                                <li class="account__content-info-content-date-item js-year-item">2010</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2009</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2008</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2007</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2006</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2005</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2004</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2003</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2002</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2001</li>
+                                                <li class="account__content-info-content-date-item js-year-item">2000</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1999</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1998</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1997</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1996</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1995</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1994</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1993</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1992</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1991</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1990</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1989</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1988</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1987</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1986</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1985</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1984</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1983</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1982</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1980</li>
+                                                <li class="account__content-info-content-date-item js-year-item">1979</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="account__content-control">
+                                <div class="btn btn--primary account__content-control-btn">Lưu lại</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -588,6 +690,7 @@
     </div>
 
     <script src="./assets/js/base.js"></script>
+    <script src="./assets/js/Account - Account Infomation.js"></script>
 </body>
 
 </html>

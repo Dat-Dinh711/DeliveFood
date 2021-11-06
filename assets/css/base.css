@@ -787,7 +787,7 @@ body {
 .dropdown__menu-products {
     background-color: var(--white-color);
     position: absolute;
-    top: 47px;
+    top: 49px;
     left: 37%;
     width: 700px;
     padding: 0;
@@ -1522,10 +1522,7 @@ body {
     padding-bottom: 13px;
     color: #474747;
     font-size: 1.6rem;
-<<<<<<< HEAD
-=======
     transition: 0.5s;
->>>>>>> 64b7d004cc83b44fa89f8d84e056203be4a9c4f1
     cursor: pointer;
 }
 
