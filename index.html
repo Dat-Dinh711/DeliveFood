@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliveFood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img/Public Image/Logo.png" type="image/x-icon">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=359469145803979&autoLogAppEvents=1" nonce="OW3DDN5L"></script>
+    <meta name="google-signin-client_id" content="692753406462-udjs52qov2mop6fr1hb6b366tnqdivat.apps.googleusercontent.com">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-search">
+                <div class="header-search__logo">
+                    <a href="/">
+                        <img src="./assets/img/Public Image/Logo.png" alt="Logo" class="header-search__logo-img">
+                    </a>
+                </div>
+
+                <div class="header-search__btn">
+                    <input type="text" placeholder="Tìm kiếm ..." class="header-search__btn-input">
+                    <i class="fas fa-search header-search__btn-icon"></i>
+                </div>
+
+                <div class="header-search__notify">
+                    <i class="fas fa-bell header-search__notify-icon"></i>
+                    <span class="header-search__notify-notice">0</span>
+
+                    <!-- Notify list -->
+                    <div class="header-search__notify-list">
+                        <!-- Chưa có sản phẩm -->
+                        <img src="./assets/img/no_cart.png" alt="" class="header-search__notify-no-notify-img">
+                        <span class="header-search__notify-no-notify-title">Chưa có thông báo</span>
+
+                        <!-- Đã có sản phẩm -->
+                        <h4 class="header-search__notify-list-heading">Thông báo mới nhất</h4>
+                        <ul class="header-search__notify-list-item">
+                            <li class="header-search__notify-item">
+                                <a href="" class="header-search__notify-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__notify-img">
+                                    <div class="header-search__notify-info">
+                                        <span class="header-search__notify-name">Bông cải xanh</span>
+                                        <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="header-search__notify-item header-search__notify-item-viewed">
+                                <a href="" class="header-search__notify-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__notify-img">
+                                    <div class="header-search__notify-info">
+                                        <span class="header-search__notify-name">Bông cải xanh</span>
+                                        <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="header-search__notify-item">
+                                <a href="" class="header-search__notify-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__notify-img">
+                                    <div class="header-search__notify-info">
+                                        <span class="header-search__notify-name">Bông cải xanh</span>
+                                        <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="header-search__notify-item">
+                                <a href="" class="header-search__notify-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__notify-img">
+                                    <div class="header-search__notify-info">
+                                        <span class="header-search__notify-name">Bông cải xanh</span>
+                                        <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="header-search__notify-item header-search__notify-item-viewed">
+                                <a href="" class="header-search__notify-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__notify-img">
+                                    <div class="header-search__notify-info">
+                                        <span class="header-search__notify-name">Bông cải xanh</span>
+                                        <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="header-search__notify-item">
+                                <a href="" class="header-search__notify-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__notify-img">
+                                    <div class="header-search__notify-info">
+                                        <span class="header-search__notify-name">Bông cải xanh</span>
+                                        <span class="header-search__notify-desc">Sản phẩm an toàn, thân thiên, 100% organic</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <footer class="header__notify-footer">
+                            <a href="" class="header__notify-footer-link">Xem tất cả</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="header-search__cart">
+                    <i class="fas fa-shopping-cart header-search__cart-icon"></i>
+                    <span class="header-search__cart-notice">0</span>
+
+                    <!-- Cart list -->
+                    <div class="header-search__cart-list">
+                        <!-- Chưa có sản phẩm -->
+                        <img src="./assets/img/no_cart.png" alt="" class="header-search__cart-no-cart-img">
+                        <span class="header-search__cart-no-cart-title">Chưa có sản phẩm nào</span>
+
+                        <!-- Đã có sản phẩm -->
+                        <h4 class="header-search__cart-list-heading">Sản phẩm đã thêm</h4>
+                        <ul class="header-search__cart-list-item">
+                            <li class="header-search__cart-item">
+                                <a href="" class="header-search__cart-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__cart-img">
+                                    <div class="header-search__cart-info">
+                                        <span class="header-search__cart-name">Bông cải xanh</span>
+                                        <span class="header-search__cart-price">32.000 VND</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header-search__cart-item">
+                                <a href="" class="header-search__cart-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__cart-img">
+                                    <div class="header-search__cart-info">
+                                        <span class="header-search__cart-name">Bông cải xanh</span>
+                                        <span class="header-search__cart-price">32.000 VND</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header-search__cart-item">
+                                <a href="" class="header-search__cart-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__cart-img">
+                                    <div class="header-search__cart-info">
+                                        <span class="header-search__cart-name">Bông cải xanh</span>
+                                        <span class="header-search__cart-price">32.000 VND</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header-search__cart-item">
+                                <a href="" class="header-search__cart-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__cart-img">
+                                    <div class="header-search__cart-info">
+                                        <span class="header-search__cart-name">Bông cải xanh</span>
+                                        <span class="header-search__cart-price">32.000 VND</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header-search__cart-item">
+                                <a href="" class="header-search__cart-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__cart-img">
+                                    <div class="header-search__cart-info">
+                                        <span class="header-search__cart-name">Bông cải xanh</span>
+                                        <span class="header-search__cart-price">32.000 VND</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header-search__cart-item">
+                                <a href="" class="header-search__cart-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__cart-img">
+                                    <div class="header-search__cart-info">
+                                        <span class="header-search__cart-name">Bông cải xanh</span>
+                                        <span class="header-search__cart-price">32.000 VND</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header-search__cart-item">
+                                <a href="" class="header-search__cart-link">
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="header-search__cart-img">
+                                    <div class="header-search__cart-info">
+                                        <span class="header-search__cart-name">Bông cải xanh</span>
+                                        <span class="header-search__cart-price">32.000 VND</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <footer class="header__cart-footer">
+                            <a href="./Cart.html" class="header__cart-footer-link">Xem tất cả</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="header-search__user">
+                    <div class="header-search__user-info">
+                        <i class="fas fa-user-circle header-search__user-icon"></i>
+                        <span class="header-search__user-name">Đạt Đinh</span>
+                    </div>
+
+                    <!-- <div class="header-search__user-list">
+                        <ul class="header-search__user-list-item">
+                            <li class="header-search__user-item js-login">Đăng nhập</li>
+                            <li class="header-search__user-item js-register">Đăng ký</li>
+                        </ul>
+                    </div> -->
+
+                    <div class="header-search__user-list-logged">
+                        <ul class="header-search__user-list-item">
+                            <li class="header-search__user-item">
+                                <a href="./Account - Account Infomation.html" class="header-search__user-item-link">Thông tin tài khoản</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Order - All.html" class="header-search__user-item-link">Đơn mua</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Seller Mode/OverviewShop.html" class="header-search__user-item-link">Quản lý cửa hàng</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Shipper Mode/Overviewshipper.html" class="header-search__user-item-link">Quản lý đơn giao</a>
+                            </li>
+                            <li class="header-search__user-item header-search__user-log-out">Đăng xuất</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar">
+                <div class="grid">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="./HomePage.html" class="nav-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="./About.html" class="nav-link">
+                                Về chúng tôi
+                            </a>
+                        </li>
+                        <li class="navbar-item menu-products">
+                            <a href="./ProductsList.html" class="nav-link">
+                                Danh sách sản phẩm
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+
+                            <ul class="dropdown__menu-products">
+                                <ul class="dropdown__menu-products-list">
+                                    <li class="dropdown-menu-products-item">Trái Cây Tươi</li>
+                                    <li class="dropdown-menu-products-item">Thịt Nguội</li>
+                                    <li class="dropdown-menu-products-item">Rau Củ Quả Đóng Hộp</li>
+                                    <li class="dropdown-menu-products-item">Các Loại Hạt</li>
+                                    <li class="dropdown-menu-products-item">Mì & Nui</li>
+                                    <li class="dropdown-menu-products-item">Bia</li>
+                                    <li class="dropdown-menu-products-item">Trà</li>
+                                    <li class="dropdown-menu-products-item">Mẹ & Bé</li>
+                                </ul>
+                                <ul class="dropdown__menu-products-list">
+                                    <li class="dropdown-menu-products-item">Trứng & Sữa</li>
+                                    <li class="dropdown-menu-products-item">Thịt Tươi Sống</li>
+                                    <li class="dropdown-menu-products-item">Rau Củ Quả Đông Lạnh</li>
+                                    <li class="dropdown-menu-products-item">Thịt Hải Sản Đóng Hộp</li>
+                                    <li class="dropdown-menu-products-item">Trái Cây Khô</li>
+                                    <li class="dropdown-menu-products-item">Bánh Kẹo & Snack</li>
+                                    <li class="dropdown-menu-products-item">Đồ Uống</li>
+                                    <li class="dropdown-menu-products-item">Vật Dụng Gia Đình</li>
+                                </ul>
+                                <ul class="dropdown__menu-products-list">
+                                    <li class="dropdown-menu-products-item">Rau Củ Tươi</li>
+                                    <li class="dropdown-menu-products-item">Hải Sản Tươi Sống</li>
+                                    <li class="dropdown-menu-products-item">Thịt Hải Sản Đông Lạnh</li>
+                                    <li class="dropdown-menu-products-item">Bánh Mì</li>
+                                    <li class="dropdown-menu-products-item">Gia Vị & Dầu Ăn</li>
+                                    <li class="dropdown-menu-products-item">Rượu</li>
+                                    <li class="dropdown-menu-products-item">Cà Phê</li>
+                                    <li class="dropdown-menu-products-item">Thực Phẩm Bổ Sung</li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="./Recipe.html" class="nav-link">
+                                Công thức
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="container__banner">
+                <div class="container__banner-text">
+                    <span class="container__banner-title">Delivefood</span>
+                    <span class="container__banner-desc">You want, you pick, you order <br>
+                    We sell, we sort, we deliver</span>
+                </div>
+                <div class="container__banner-wrap">
+                    <input type="radio" name="radio" id="radio1">
+                    <input type="radio" name="radio" id="radio2">
+                    <input type="radio" name="radio" id="radio3">
+                    <input type="radio" name="radio" id="radio4">
+
+                    <div class="slide first">
+                        <img src="./assets/img/Homepage/Banner.jpg" alt="" class="container__banner-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/Homepage/Banner2.jpg" alt="" class="container__banner-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/Homepage/Banner3.jpg" alt="" class="container__banner-img">
+                    </div>
+                    <div class="slide last">
+                        <img src="./assets/img/Homepage/Banner4.jpg" alt="" class="container__banner-img">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="container-content">
+                    <div class="container__featured">
+                        <span class="container__products-title">Mặt hàng nổi bật</span>
+
+                        <div class="container__featured-products">
+                            <div class="grid__row">
+                                <div class="grid__column-5">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item container__products-onsale">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item container__products-onsale">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-5">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container__featured-banner">
+                            <img src="./assets/img/Homepage/Featured_Banner_1.jpg" alt="" class="container__featured-banner-img">
+                            <img src="./assets/img/Homepage/Featured_Banner_2.jpg" alt="" class="container__featured-banner-img">
+                        </div>
+                    </div>
+
+                    <div class="container__vegetables">
+                        <span class="container__products-title">Rau Củ</span>
+
+                        <div class="container__vegetables-products">
+                            <div class="grid__column-5">
+                                <div class="container__vegetables-banner">
+                                    <img src="./assets/img/Homepage/Vegetables_Banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="grid__2column-2">
+                                <div class="container__vegetables-products-item container__vegetables-products-onsale">
+                                    <div class="container__vegetables-products-new">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="container__vegetables-products-sale">
+                                        <span>ON SALE</span>
+                                    </div>
+                                    <div class="container__vegetables-products-cart">
+                                        <i class="fas fa-shopping-cart container__vegetables-products-cart-icon"></i>
+                                    </div>
+                                    <a href="./ProductDetails.html">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__vegetables-products-img">
+                                    </a>
+                                    <div class="container__vegetables-products-rating">
+                                        <i class="fas fa-star container__products-star--gold"></i>
+                                        <i class="fas fa-star container__products-star--gold"></i>
+                                        <i class="fas fa-star container__products-star--gold"></i>
+                                        <i class="fas fa-star container__products-star--gold"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="container__vegetable-products-info">
+                                        <a href="./ProductDetails.html" class="container__vegetables-products-name">Bông cải xanh</a>
+                                        <div class="container__vegetables-products-desc">Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable...</div>
+                                        <div class="container__vegetables-products-price">32.000 VND</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid__row-2">
+                                <div class="grid__row-2-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-2-column">
+                                    <div class="container__products-item container__products-onsale">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-2-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-2-column">
+                                    <div class="container__products-item container__products-onsale">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__meat">
+                        <span class="container__products-title">Thịt</span>
+
+                        <div class="container__meat-products">
+                            <div class="grid__row-4">
+                                <div class="container__meat-banner">
+                                    <img src="./assets/img/Homepage/Meat_banner.jpg" alt="">
+                                </div>
+
+                                <div class="grid__row-4-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-4-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-4-column">
+                                    <div class="container__products-item container__products-onsale">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-4-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-4-column">
+                                    <div class="container__products-item container__products-onsale">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-4-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-4-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-4-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__meat-best-seller">
+                                <div class="container__meat-best-seller-content">
+                                    <div class="container__meat-best-seller-title">Best Seller</div>
+
+                                    <div class="container__meat-best-seller-item">
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__meat-best-seller-img">
+                                        </a>
+                                        <div class="container__meat-best-seller-info">
+                                            <div class="container__meat-best-seller-name">Bông cải xanh</div>
+                                            <div class="container__meat-best-seller-price">32.000VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__meat-best-seller-item">
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__meat-best-seller-img">
+                                        </a>
+                                        <div class="container__meat-best-seller-info">
+                                            <div class="container__meat-best-seller-name">Bông cải xanh</div>
+                                            <div class="container__meat-best-seller-price">32.000VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__meat-best-seller-item">
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__meat-best-seller-img">
+                                        </a>
+                                        <div class="container__meat-best-seller-info">
+                                            <div class="container__meat-best-seller-name">Bông cải xanh</div>
+                                            <div class="container__meat-best-seller-price">32.000VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__meat-best-seller-item">
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__meat-best-seller-img">
+                                        </a>
+                                        <div class="container__meat-best-seller-info">
+                                            <div class="container__meat-best-seller-name">Bông cải xanh</div>
+                                            <div class="container__meat-best-seller-price">32.000VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__meat-best-seller-item">
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__meat-best-seller-img">
+                                        </a>
+                                        <div class="container__meat-best-seller-info">
+                                            <div class="container__meat-best-seller-name">Bông cải xanh</div>
+                                            <div class="container__meat-best-seller-price">32.000VND</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__meat-best-seller-item">
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__meat-best-seller-img">
+                                        </a>
+                                        <div class="container__meat-best-seller-info">
+                                            <div class="container__meat-best-seller-name">Bông cải xanh</div>
+                                            <div class="container__meat-best-seller-price">32.000VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__fruit">
+                        <span class="container__products-title">Trái cây</span>
+
+                        <div class="container__fruit-products">
+                            <div class="grid__2column-2">
+                                <div class="container__vegetables-products-item container__vegetables-products-onsale">
+                                    <div class="container__vegetables-products-new">
+                                        <span>NEW</span>
+                                    </div>
+                                    <div class="container__vegetables-products-sale">
+                                        <span>ON SALE</span>
+                                    </div>
+                                    <div class="container__vegetables-products-cart">
+                                        <i class="fas fa-shopping-cart container__vegetables-products-cart-icon"></i>
+                                    </div>
+                                    <a href="./ProductDetails.html">
+                                        <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__vegetables-products-img">
+                                    </a>
+                                    <div class="container__vegetables-products-rating">
+                                        <i class="fas fa-star container__products-star--gold"></i>
+                                        <i class="fas fa-star container__products-star--gold"></i>
+                                        <i class="fas fa-star container__products-star--gold"></i>
+                                        <i class="fas fa-star container__products-star--gold"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="container__vegetable-products-info">
+                                        <a href="./ProductDetails.html" class="container__vegetables-products-name">Bông cải xanh</a>
+                                        <div class="container__vegetables-products-desc">Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable...</div>
+                                        <div class="container__vegetables-products-price">32.000 VND</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__row-2">
+                                <div class="grid__row-2-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-2-column">
+                                    <div class="container__products-item container__products-onsale">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-2-column">
+                                    <div class="container__products-item">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__row-2-column">
+                                    <div class="container__products-item container__products-onsale">
+                                        <div class="container__products-new">
+                                            <span>NEW</span>
+                                        </div>
+                                        <div class="container__products-sale">
+                                            <span>ON SALE</span>
+                                        </div>
+                                        <div class="container__products-cart">
+                                            <i class="fas fa-shopping-cart container__products-cart-icon"></i>
+                                        </div>
+                                        <a href="./ProductDetails.html">
+                                            <img src="./assets/img/Products/Bông cải xanh.jpg" alt="" class="container__products-img">
+                                        </a>
+                                        <div class="container__products-rating">
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star container__products-star--gold"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="container__products-info">
+                                            <a href="./ProductDetails.html" class="container__products-name">Bông cải xanh</a>
+                                            <div class="container__products-price">32.000 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2">
+                                <div class="container__vegetables-banner">
+                                    <img src="./assets/img/Homepage/Fruit Banner.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container__recipe">
+                        <span class="container__products-title">Công thức</span>
+
+                        <div class="container__recipe-products">
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <div href="" class="container__recipe-title">Bữa sáng tiện lợi 1</div>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <a href="" class="container__recipe-title">Bữa sáng tiện lợi 1</a>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <a href="" class="container__recipe-title">Bữa sáng tiện lợi 1</a>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <a href="" class="container__recipe-title">Bữa sáng tiện lợi 1</a>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <a href="" class="container__recipe-title">Bữa sáng tiện lợi 1</a>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <a href="" class="container__recipe-title">Bữa sáng tiện lợi 1</a>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <a href="" class="container__recipe-title">Bữa sáng tiện lợi 1</a>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <a href="" class="container__recipe-title">Bữa sáng tiện lợi 1</a>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__recipe-item">
+                                <a href="./Recipe - Theme.html">
+                                    <img src="./assets/img/Homepage/Recipe_1.png" alt="" class="container__recipe-img">
+                                </a>
+                                <div class="container__recipe-info">
+                                    <a href="" class="container__recipe-title">Bữa sáng tiện lợi 1</a>
+                                    <div class="container__recipe-desc">Bữa sáng được xem là bữa ăn quan trọng nhất trong ngày. Không chỉ vậy, bữa sáng còn là bữa chính đối với những gia đình bận rộn, là thời điểm tuyệt vời để các thành viên trò chuyện, chia sẻ với nhau về công việc, học
+                                        tập...
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container__recipe-arrow-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="container__recipe-arrow-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid">
+                <div class="footer-content">
+                    <div class="grid__column-4 footer__customer-service">
+                        <span class="footer__customer-service-title">CHĂM SÓC KHÁCH HÀNG</span>
+                        <ul class="footer__customer-service-desc">
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                        Hotline: 1900 1111
+                                    </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                        Các câu hỏi thường gặp
+                                    </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                        Hướng dẫn đặt hàng
+                                    </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                        Chính sách đổi trả
+                                    </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                        Hỗ trợ khách hàng
+                                    </a>
+                            </li>
+                            <li class="footer__customer-service-item">
+                                <a href="" class="footer__customer-service-link">
+                                        Báo lỗi mật khẩu: security@delivefood.vn
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-4 footer__about">
+                        <span class="footer__about-title">VỀ DELIVEFOOD</span>
+                        <ul class="footer__about-desc">
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                        Giới thiệu
+                                    </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                        Chính sách bảo mật thanh toán
+                                    </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                        Chính sách bảo mật thông tin cá nhân
+                                    </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                        Chính sách giải quyết khiếu nại
+                                    </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                        Điều khoản sử dụng
+                                    </a>
+                            </li>
+                            <li class="footer__about-item">
+                                <a href="" class="footer__about-link">
+                                        Bán hàng doanh nghiệp
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-4 footer__partner-pay">
+                        <div class="footer__partner">
+                            <span class="footer__partner-title">ĐỐI TÁC LIÊN KẾT</span>
+                            <ul class="footer__partner-desc">
+                                <li class="footer__partner-item">
+                                    <img src="./assets/img/Public Image/GrabExpress.png" alt="" class="footer__partner-img">
+                                </li>
+                                <li class="footer__partner-item">
+                                    <img src="./assets/img/Public Image/AhaMove.png" alt="" class="footer__partner-img">
+                                </li>
+                                <li class="footer__partner-item">
+                                    <img src="./assets/img/Public Image/Be.png" alt="" class="footer__partner-img">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__pay">
+                            <span class="footer__pay-title">PHƯƠNG THỨC THANH TOÁN</span>
+                            <ul class="footer__pay-desc">
+                                <li class="footer__pay-item">
+                                    <img src="./assets/img/Public Image/Visa.png" alt="" class="footer__pay-img">
+                                </li>
+                                <li class="footer__pay-item">
+                                    <img src="./assets/img/Public Image/MasterCard.png" alt="" class="footer__pay-img">
+                                </li>
+                                <li class="footer__pay-item">
+                                    <img src="./assets/img/Public Image/Money.png" alt="" class="footer__pay-img">
+                                </li>
+                                <li class="footer__pay-item">
+                                    <img src="./assets/img/Public Image/OnlineBanking.png" alt="" class="footer__pay-img">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid__column-4 footer__connect">
+                        <span class="footer__connect-title">KẾT NỐI VỚI CHÚNG TÔI</span>
+                        <div class="footer__connect-desc">
+                            <img src="./assets/img/Public Image/QR_Code.png" alt="" class="footer__connect-qr">
+                            <div class="footer__connect-apps">
+                                <img src="./assets/img/Public Image/gg play.png" alt="" class="footer__connect-apps-img">
+                                <img src="./assets/img/Public Image/app store.png" alt="" class="footer__connect-apps-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body js-modal__body">
+
+            <!-- Register form -->
+            <div class="auth-form js-regis-auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn js-login">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="SĐT hoặc Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <label for="type-account" class="auth-form__input-title">Loại Tài khoản:</label>
+                            <select name="type-account" class="auth-form__input-select">
+                                <option value="buyer">Người Mua</option>
+                                <option value="seller">Người Bán</option>
+                                <option value="shipper">Tài Xế</option>
+                            </select>
+                        </div>
+                        <div class="edit-table"></div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <i class="far fa-eye edit-table" id="togglePassword"></i>
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            <i class="far fa-eye edit-table" id="togglePassword"></i>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với DeliveFood về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn btn--normal auth-form__control-back js-back-btn" style="width: 120px; height: 35px;">TRỞ LẠI</button>
+                        <button class="btn btn--primary" style="width: 120px; height: 35px;">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <div class="fb-login-button" data-width="200px" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+
+                    <a style="width: 200px; height: 28px; background-color: #f5f5f5;" href="" class="auth-form__socials--google btn btn--size-s btn--with-icon g-signin2" data-onsuccess="onSignIn">
+                        <i class="auth-form__socials-icon footer-item-icon fab fa-google"></i>
+                        <span class="auth-form__socials-label">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Login form -->
+            <div class="auth-form js-login-auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn js-register">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="SĐT hoặc Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <i class="far fa-eye edit-table" id="togglePassword"></i>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <button class="btn btn--normal auth-form__control-back js-back-btn" style="width: 120px; height: 35px;">TRỞ LẠI</button>
+                        <button class="btn btn--primary" style="width: 120px; height: 35px;">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <div class="fb-login-button" data-width="200px" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+
+                    <a style="width: 200px; height: 28px; background-color: #f5f5f5;" href="" class="auth-form__socials--google btn btn--size-s btn--with-icon g-signin2" data-onsuccess="onSignIn">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-label">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/base.js"></script>
+    <script src="./assets/js/homepage.js"></script>
+</body>
+
+</html>
