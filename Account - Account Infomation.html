@@ -28,10 +28,12 @@
                         <img src="./assets/img/Public Image/Logo.png" alt="Logo" class="header-search__logo-img">
                     </a>
                 </div>
+
                 <div class="header-search__btn">
                     <input type="text" placeholder="Tìm kiếm ..." class="header-search__btn-input">
                     <i class="fas fa-search header-search__btn-icon"></i>
                 </div>
+
                 <div class="header-search__notify">
                     <i class="fas fa-bell header-search__notify-icon"></i>
                     <span class="header-search__notify-notice">0</span>
@@ -110,6 +112,7 @@
                         </footer>
                     </div>
                 </div>
+
                 <div class="header-search__cart">
                     <i class="fas fa-shopping-cart header-search__cart-icon"></i>
                     <span class="header-search__cart-notice">0</span>
@@ -188,27 +191,38 @@
                             </li>
                         </ul>
                         <footer class="header__cart-footer">
-                            <a href="" class="header__cart-footer-link">Xem tất cả</a>
+                            <a href="./Cart.html" class="header__cart-footer-link">Xem tất cả</a>
                         </footer>
                     </div>
                 </div>
+
                 <div class="header-search__user">
                     <div class="header-search__user-info">
                         <i class="fas fa-user-circle header-search__user-icon"></i>
                         <span class="header-search__user-name">Đạt Đinh</span>
                     </div>
 
-                    <div class="header-search__user-list">
+                    <!-- <div class="header-search__user-list">
                         <ul class="header-search__user-list-item">
                             <li class="header-search__user-item js-login">Đăng nhập</li>
                             <li class="header-search__user-item js-register">Đăng ký</li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <div class="header-search__user-list-logged">
                         <ul class="header-search__user-list-item">
-                            <li class="header-search__user-item">Thông tin tài khoản</li>
-                            <li class="header-search__user-item">Đơn mua</li>
+                            <li class="header-search__user-item">
+                                <a href="./Account - Account Infomation.html" class="header-search__user-item-link">Thông tin tài khoản</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Order - All.html" class="header-search__user-item-link">Đơn mua</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Seller Mode/OverviewShop.html" class="header-search__user-item-link">Quản lý cửa hàng</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Shipper Mode/Overviewshipper.html" class="header-search__user-item-link">Quản lý đơn giao</a>
+                            </li>
                             <li class="header-search__user-item header-search__user-log-out">Đăng xuất</li>
                         </ul>
                     </div>
@@ -219,17 +233,17 @@
                 <div class="grid">
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./HomePage.html" class="nav-link">
                                 Trang chủ
                             </a>
                         </li>
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./About.html" class="nav-link">
                                 Về chúng tôi
                             </a>
                         </li>
                         <li class="navbar-item menu-products">
-                            <a href="" class="nav-link">
+                            <a href="./ProductsList.html" class="nav-link">
                                 Danh sách sản phẩm
                                 <i class="fas fa-caret-down"></i>
                             </a>
@@ -268,7 +282,7 @@
                             </ul>
                         </li>
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./Recipe.html" class="nav-link">
                                 Công thức
                             </a>
                         </li>
@@ -287,7 +301,7 @@
                         <div class="account__navbar-avt">
                             <label class="account__navbar-avt-img">
                                 <input type="file" accept=".jpg,.jpeg,.png">
-                                <img src="./assets/img/Public Image/avatar-cus2.jpg" alt="Avatar">
+                                <img src="./assets/img/Public Image/user.png" alt="Avatar">
 
                                 <label class="account__navbar-avt-icon">
                                     <input type="file" accept=".jpg,.jpeg,.png">
@@ -295,14 +309,20 @@
                                 </label>
                             </label>
 
-                            <span class="account__navbar-avt-name">Rosé</span>
+                            <span class="account__navbar-avt-name">Đạt Đinh</span>
                         </div>
 
                         <div class="account__navbar-selection">
                             <ul class="account__navbar-selection-list">
-                                <li class="account__navbar-selection-item account__navbar-selection-item-active">Thông tin tài khoản</li>
-                                <li class="account__navbar-selection-item">Địa chỉ</li>
-                                <li class="account__navbar-selection-item">Mật khẩu</li>
+                                <li class="account__navbar-selection-item account__navbar-selection-item-active">
+                                    <a href="./Account - Account Infomation.html" class="account__navbar-selection-item-link selection-active">Thông tin tài khoản</a>
+                                </li>
+                                <li class="account__navbar-selection-item">
+                                    <a href="./Account - Address.html" class="account__navbar-selection-item-link">Địa chỉ</a>
+                                </li>
+                                <li class="account__navbar-selection-item">
+                                    <a href="./Account - Password.html" class="account__navbar-selection-item-link">Mật khẩu</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -322,7 +342,7 @@
                                 </div>
 
                                 <div class="account__content-info-content">
-                                    <div class="account__content-info-content-username">Rosé</div>
+                                    <div class="account__content-info-content-username">Đạt Đinh</div>
 
                                     <div class="account__content-info-content-sdt-email">
                                         <input type="text">
@@ -330,11 +350,11 @@
 
                                     <div class="account__content-info-content-gender">
                                         <div>
-                                            <input type="radio" name="gender" id="male" value="male">
+                                            <input type="radio" name="gender" id="male" value="male" checked>
                                             <label for="male">Nam</label>
                                         </div>
                                         <div>
-                                            <input type="radio" name="gender" id="female" value="female" checked>
+                                            <input type="radio" name="gender" id="female" value="female">
                                             <label for="female">Nữ</label>
                                         </div>
                                         <div>
@@ -345,7 +365,7 @@
 
                                     <div class="account__content-info-content-date">
                                         <div class="js-date">
-                                            <span class="account__content-info-content-date-title js-date-title">11</span>
+                                            <span class="account__content-info-content-date-title js-date-title">01</span>
                                             <i class="fas fa-chevron-down account__content-info-content-date-icon-down js-date-icon-down"></i>
                                             <i class="fas fa-chevron-up account__content-info-content-date-icon-up js-date-icon-up" style="display: none;"></i>
 
@@ -384,7 +404,7 @@
                                             </ul>
                                         </div>
                                         <div class="js-month">
-                                            <span class="account__content-info-content-date-title js-month-title">Tháng 2</span>
+                                            <span class="account__content-info-content-date-title js-month-title">Tháng 11</span>
                                             <i class="fas fa-chevron-down account__content-info-content-date-icon-down js-month-icon-down"></i>
                                             <i class="fas fa-chevron-up account__content-info-content-date-icon-up js-month-icon-up" style="display: none;"></i>
 
@@ -404,7 +424,7 @@
                                             </ul>
                                         </div>
                                         <div class="js-year">
-                                            <span class="account__content-info-content-date-title js-year-title">1997</span>
+                                            <span class="account__content-info-content-date-title js-year-title">2000</span>
                                             <i class="fas fa-chevron-down account__content-info-content-date-icon-down js-year-icon-down"></i>
                                             <i class="fas fa-chevron-up account__content-info-content-date-icon-up js-year-icon-up" style="display: none;"></i>
 

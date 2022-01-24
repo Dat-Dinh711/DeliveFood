@@ -27,10 +27,12 @@
                         <img src="./assets/img/Public Image/Logo.png" alt="Logo" class="header-search__logo-img">
                     </a>
                 </div>
+
                 <div class="header-search__btn">
                     <input type="text" placeholder="Tìm kiếm ..." class="header-search__btn-input">
                     <i class="fas fa-search header-search__btn-icon"></i>
                 </div>
+
                 <div class="header-search__notify">
                     <i class="fas fa-bell header-search__notify-icon"></i>
                     <span class="header-search__notify-notice">0</span>
@@ -109,6 +111,7 @@
                         </footer>
                     </div>
                 </div>
+
                 <div class="header-search__cart">
                     <i class="fas fa-shopping-cart header-search__cart-icon"></i>
                     <span class="header-search__cart-notice">0</span>
@@ -187,27 +190,38 @@
                             </li>
                         </ul>
                         <footer class="header__cart-footer">
-                            <a href="" class="header__cart-footer-link">Xem tất cả</a>
+                            <a href="./Cart.html" class="header__cart-footer-link">Xem tất cả</a>
                         </footer>
                     </div>
                 </div>
+
                 <div class="header-search__user">
                     <div class="header-search__user-info">
                         <i class="fas fa-user-circle header-search__user-icon"></i>
                         <span class="header-search__user-name">Đạt Đinh</span>
                     </div>
 
-                    <div class="header-search__user-list">
+                    <!-- <div class="header-search__user-list">
                         <ul class="header-search__user-list-item">
                             <li class="header-search__user-item js-login">Đăng nhập</li>
                             <li class="header-search__user-item js-register">Đăng ký</li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <div class="header-search__user-list-logged">
                         <ul class="header-search__user-list-item">
-                            <li class="header-search__user-item">Thông tin tài khoản</li>
-                            <li class="header-search__user-item">Đơn mua</li>
+                            <li class="header-search__user-item">
+                                <a href="./Account - Account Infomation.html" class="header-search__user-item-link">Thông tin tài khoản</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Order - All.html" class="header-search__user-item-link">Đơn mua</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Seller Mode/OverviewShop.html" class="header-search__user-item-link">Quản lý cửa hàng</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Shipper Mode/Overviewshipper.html" class="header-search__user-item-link">Quản lý đơn giao</a>
+                            </li>
                             <li class="header-search__user-item header-search__user-log-out">Đăng xuất</li>
                         </ul>
                     </div>
@@ -218,17 +232,17 @@
                 <div class="grid">
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./HomePage.html" class="nav-link">
                                 Trang chủ
                             </a>
                         </li>
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./About.html" class="nav-link">
                                 Về chúng tôi
                             </a>
                         </li>
                         <li class="navbar-item menu-products">
-                            <a href="" class="nav-link">
+                            <a href="./ProductsList.html" class="nav-link">
                                 Danh sách sản phẩm
                                 <i class="fas fa-caret-down"></i>
                             </a>
@@ -267,7 +281,7 @@
                             </ul>
                         </li>
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./Recipe.html" class="nav-link">
                                 Công thức
                             </a>
                         </li>
@@ -283,7 +297,7 @@
                     <div class="container__product">
                         <div class="container__product-img">
                             <div class="screen-img">
-                                <img id="product-image" src="./assets/img/Products/Bông cải xanh.jpg" alt="Sản phẩm" > 
+                                <img id="product-image" src="./assets/img/Products/Bông cải xanh.jpg" alt="Sản phẩm">
                             </div>
                             <div class="container__product-img-list">
                                 <div class="container__product-img-list-items">
@@ -293,7 +307,7 @@
                                     <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
                                     <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
                                     <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
-                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">                               
+                                    <img src="./assets/img/Products/Bông cải xanh.jpg" alt="Review" class="container__product-img-item">
                                 </div>
                                 <div class="next-slick next-slick-prev" style="left:0; bottom: 38%;">
                                     <i class="fas fa-chevron-left"></i>
@@ -328,24 +342,24 @@
                             <div class="line-block "></div>
                             <div class="product-type " style="display: flex; margin: 15px 0; ">
                                 <span style="font-size: 15px; padding: 10px 0; ">Khối lượng</span>
-                                <div class="product-type-item">
-                                    <button class="type-item type-item-active">300g
+                                <div class="product-type-item ">
+                                    <button class="type-item type-item-active ">300g
                                         <div class="type-item-active-tick ">
                                             <i class="fas fa-check "></i>
                                         </div>
                                     </button>
-                                    <button class="type-item" >600g</button>
-                                    <button class="type-item">1kg</button>
+                                    <button class="type-item " >600g</button>
+                                    <button class="type-item ">1kg</button>
                                 </div>
                             </div>
                             <div class="quantity ">
                                 <span style="font-size: 15px; padding: 10px 0; ">Số lượng</span>
                                 <div class="block-quantity ">
-                                    <button class="quantity-btn btn-minus" style="border-radius: 8px 0px 0px 8px; ">
+                                    <button class="quantity-btn btn-minus " style="border-radius: 8px 0px 0px 8px; ">
                                         <i class="fas fa-minus "></i>
                                     </button>
-                                    <input type="text" min="1" class="quantity-btn quantity-btn-count " role="spinbutton " aria-valuenow="1 " value="1 ">
-                                    <button class="quantity-btn btn-plus" onclick="countProduct()" style="border-radius: 0px 8px 8px 0px; ">
+                                    <input type="text " min="1 " class="quantity-btn quantity-btn-count " role="spinbutton " aria-valuenow="1 " value="1 ">
+                                    <button class="quantity-btn btn-plus " onclick="countProduct() " style="border-radius: 0px 8px 8px 0px; ">
                                         <i class="fas fa-plus "></i>
                                     </button>
                                 </div>

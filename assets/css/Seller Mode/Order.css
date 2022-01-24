@@ -53,6 +53,11 @@
     cursor: pointer;
 }
 
+.order__item-link {
+    text-decoration: none;
+    color: black;
+}
+
 .order__item:hover {
     background-color: #fefefe;
 }

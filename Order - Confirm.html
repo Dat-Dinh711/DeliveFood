@@ -27,10 +27,12 @@
                         <img src="./assets/img/Public Image/Logo.png" alt="Logo" class="header-search__logo-img">
                     </a>
                 </div>
+
                 <div class="header-search__btn">
                     <input type="text" placeholder="Tìm kiếm ..." class="header-search__btn-input">
                     <i class="fas fa-search header-search__btn-icon"></i>
                 </div>
+
                 <div class="header-search__notify">
                     <i class="fas fa-bell header-search__notify-icon"></i>
                     <span class="header-search__notify-notice">0</span>
@@ -109,6 +111,7 @@
                         </footer>
                     </div>
                 </div>
+
                 <div class="header-search__cart">
                     <i class="fas fa-shopping-cart header-search__cart-icon"></i>
                     <span class="header-search__cart-notice">0</span>
@@ -187,27 +190,38 @@
                             </li>
                         </ul>
                         <footer class="header__cart-footer">
-                            <a href="" class="header__cart-footer-link">Xem tất cả</a>
+                            <a href="./Cart.html" class="header__cart-footer-link">Xem tất cả</a>
                         </footer>
                     </div>
                 </div>
+
                 <div class="header-search__user">
                     <div class="header-search__user-info">
                         <i class="fas fa-user-circle header-search__user-icon"></i>
                         <span class="header-search__user-name">Đạt Đinh</span>
                     </div>
 
-                    <div class="header-search__user-list">
+                    <!-- <div class="header-search__user-list">
                         <ul class="header-search__user-list-item">
                             <li class="header-search__user-item js-login">Đăng nhập</li>
                             <li class="header-search__user-item js-register">Đăng ký</li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <div class="header-search__user-list-logged">
                         <ul class="header-search__user-list-item">
-                            <li class="header-search__user-item">Thông tin tài khoản</li>
-                            <li class="header-search__user-item">Đơn mua</li>
+                            <li class="header-search__user-item">
+                                <a href="./Account - Account Infomation.html" class="header-search__user-item-link">Thông tin tài khoản</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Order - All.html" class="header-search__user-item-link">Đơn mua</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Seller Mode/OverviewShop.html" class="header-search__user-item-link">Quản lý cửa hàng</a>
+                            </li>
+                            <li class="header-search__user-item">
+                                <a href="./Shipper Mode/Overviewshipper.html" class="header-search__user-item-link">Quản lý đơn giao</a>
+                            </li>
                             <li class="header-search__user-item header-search__user-log-out">Đăng xuất</li>
                         </ul>
                     </div>
@@ -218,17 +232,17 @@
                 <div class="grid">
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./HomePage.html" class="nav-link">
                                 Trang chủ
                             </a>
                         </li>
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./About.html" class="nav-link">
                                 Về chúng tôi
                             </a>
                         </li>
                         <li class="navbar-item menu-products">
-                            <a href="" class="nav-link">
+                            <a href="./ProductsList.html" class="nav-link">
                                 Danh sách sản phẩm
                                 <i class="fas fa-caret-down"></i>
                             </a>
@@ -267,7 +281,7 @@
                             </ul>
                         </li>
                         <li class="navbar-item">
-                            <a href="" class="nav-link">
+                            <a href="./Recipe.html" class="nav-link">
                                 Công thức
                             </a>
                         </li>
@@ -282,12 +296,24 @@
                 <div class="grid">
                     <div class="order-all__navbar">
                         <ul class="order-all__navbar-list">
-                            <li class="order-all__navbar-item">Tất cả</li>
-                            <li class="order-all__navbar-item order-all__navbar-item-active">Chờ xác nhận</li>
-                            <li class="order-all__navbar-item">Chờ tài xế</li>
-                            <li class="order-all__navbar-item">Đang giao</li>
-                            <li class="order-all__navbar-item">Đã giao</li>
-                            <li class="order-all__navbar-item">Đã hủy</li>
+                            <li class="order-all__navbar-item">
+                                <a href="./Order - All.html" class="order-all__navbar-item-link order-all__navbar-item-active">Tất cả</a>
+                            </li>
+                            <li class="order-all__navbar-item">
+                                <a href="./Order - Confirm.html" class="order-all__navbar-item-link">Chờ xác nhận</a>
+                            </li>
+                            <li class="order-all__navbar-item">
+                                <a href="./Order - Shipper.html" class="order-all__navbar-item-link">Chờ tài xế</a>
+                            </li>
+                            <li class="order-all__navbar-item">
+                                <a href="./Order - Delivering.html" class="order-all__navbar-item-link">Đang giao</a>
+                            </li>
+                            <li class="order-all__navbar-item">
+                                <a href="./Order - Success.html" class="order-all__navbar-item-link">Đã giao</a>
+                            </li>
+                            <li class="order-all__navbar-item">
+                                <a href="./Order - Cancel.html" class="order-all__navbar-item-link">Đã hủy</a>
+                            </li>
                         </ul>
                     </div>
 

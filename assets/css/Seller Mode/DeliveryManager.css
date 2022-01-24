@@ -59,6 +59,11 @@
     cursor: pointer;
 }
 
+.delivery__item-link {
+    text-decoration: none;
+    color: black;
+}
+
 .delivery__item:hover {
     background-color: #fefefe;
 }

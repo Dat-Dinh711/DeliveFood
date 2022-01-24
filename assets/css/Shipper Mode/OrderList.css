@@ -58,6 +58,11 @@
     border-bottom: 1px solid var(--product-border);
 }
 
+.order__item-link {
+    text-decoration: none;
+    color: black;
+}
+
 .order__item li {
     width: 13%;
 }
